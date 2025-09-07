@@ -15,7 +15,9 @@ author: "Faculty of Informatics, Masaryk University"
 ## 🧬 10:00 – 10:15 Call Methylation
 Call methylation with **modkit**:
 
-This section will cover how to call variants from a pileup of reads with methylation tags. Essentially, this time we will be considering the support for a methylation at a given position, using all the reads spanning such position. Let's use modkit to do this.
+In this section, we’ll learn how to call methylation from a pileup of reads that include methylation tags. The idea is simple: for each genomic position, we’ll use all the reads that cover that site to evaluate whether there’s evidence of methylation.  
+
+We’ll use modkit for this task. Here’s an example command:  
 
 ```bash
 modkit pileup \
@@ -28,42 +30,41 @@ modkit pileup \
     --combine-strands \
     --bedgraph
 ```
-There is a simpler way to run modkit, but mentioning these options explicitly might help you to be forced to consider what settings are the most appropriate for your project specifically.
+While there’s a simpler way to run modkit, listing out these options is useful—it encourages you to think carefully about which parameters make the most sense for your specific project.  
 
 Let's break this command down using modkit's advanced documentation from https://github.com/nanoporetech/modkit/blob/master/book/src/advanced_usage.md.
 
  *--filter-threshold*
 
-Higher number means stricter filtering. Always note your sequencing coverage, as low coverage samples might accidentally pass thresholds (3 reads out of 4 supporting methylation are statistically very different from 30/40).
+A higher number corresponds to stricter filtering. Always keep your sequencing coverage in mind—because thresholds can behave very differently depending on how much data you have. For example, 3 out of 4 reads supporting methylation is not nearly as reliable as 30 out of 40 reads, even though both technically meet the same ratio.
 
 *--ignore h*
-This time, we're only interested in 5mC, not 5hmC. This might or might not be a good idea depending on your biological sample. 
-
-          Ignore a modified base class in situ by redistributing base
-          modification probability equally across other options. For example, if
-          collapsing 'h', with 'm' and canonical options, half of the
-          probability of 'h' will be added to both 'm' and 'C'. A full
-          description of the methods can be found in collapse.md
+          
+This time, we're only interested in 5mC, not 5hmC. This might or might not be a good idea depending on your biological sample. Ignore a modified base class in situ by redistributing base modification probability equally across other options. For example, if collapsing 'h', with 'm' and canonical options, half of the probability of 'h' will be added to both 'm' and 'C'. A full description of the methods can be found in collapse.md
 
  *--combine-strands*
-          When performing motif analysis (such as CpG), sum the counts from the
-          positive and negative strands into the counts for the positive strand
-          position
+
+When performing motif analysis (such as CpG), sum the counts from the positive and negative strands into the counts for the positive strand position
 
  *--cpg*
-          Only output counts at CpG motifs. Requires a reference sequence to be
-          provided as well as FAI index
+ 
+ Only output counts at CpG motifs. Requires a reference sequence to be provided as well as FAI index
           
  *--bedgraph*
+          
+Convenient output file format that includes not only the probability of each modification, but also sequencing coverage. Always check sequencing coverage before trusting any modifications. 
 
- Convenient output file format that includes not only the probability of each modification, but also sequencing coverage. Always check sequencing coverage before trusting any modifications. 
+👉 Side note: the update-tags command in modkit renames the Mm/Ml tags to MM/ML.
 
-Note that modkit's update-tags command renames Mm/Ml to tags to MM/ML.
+Now that we’ve seen what modkit does, let’s try visualizing the results. Load your bedGraph file into IGV. By default, modkit creates a folder with modification files—look for m_CG0_combined.bedgraph and open it.
 
-Now that you understand what modkit did, please load your **bedGraph** into IGV. By default, modkit will produce a folder with modifications. Locate the file `m_CG0_combined.bedgraph` and load it.
- Does the result match your expectation? What happens if you lower the filter-threshold, or do not ignore 5hmC? How does the output look like if you do not use --bedgraph option? 
+Once it’s loaded, ask yourself:  
+  -Does the result look like what you expected?  
+  -What changes when you lower the filter-threshold?  
+  -What do you see if you include 5hmC instead of ignoring it?  
+  -And finally, how does the output differ if you don’t use the --bedgraph option at all?  
 
-Congratulations, you just finished this section! If you still have time, please continue reading modkit's documentation, as there are many options that will influence on your output. Ultimately, the chosen settings will be guided by your biological question. 
+Congratulations—you’ve completed this section! If you have some extra time, we encourage you to explore the modkit documentation. There are many additional options available, and each can shape your results in different ways. Ultimately, the best settings will depend on the biological question you’re trying to answer.
 
 
 
