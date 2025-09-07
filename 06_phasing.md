@@ -14,7 +14,7 @@ author: "Faculty of Informatics, Masaryk University"
 
 ## 🧬 10:30 – 11:00 Phasing & Methylation
 
-As before, we will be exploring the gene `KCNQ1OT1`, by typing its name in the IGV search. What do you know about this genomic region? 
+As before, we will be exploring the gene `KCNQ1OT1`, by typing its name in the IGV search. What do you know about this genomic region? Turn off the methylation, and color your alignments by "none" or "read strand". Having the methylation on would prevent you from exploring the sample variants. We are looking at HG002 individual from the GENOME IN A BOTTLE DATASET (GIAB), so of course this individual will have variation compared to hg38. 
 
 Now, let’s dig deeper into the variants in our mapped file. Zoom in to this coordinate range:
 `chr11:2,696,051-2,696,106`
