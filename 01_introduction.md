@@ -36,7 +36,7 @@ https://drive.google.com/drive/folders/1OhD8guYEJQ4_Y3Dvws0272YS4bqzlJ6Y?usp=sha
 
   or, preferably, skip these steps and import/run with:
   
-  `podman import /var/tmp/ontmet.tar.gz  bioinf-fi/ont-meth:latest` 
+  `podman import /var/tmp/ontmet.tar.gz  bioinf-fi/ontmet:latest` 
 
   # 👩‍🏫 Workshop Teaching Assistants
 
