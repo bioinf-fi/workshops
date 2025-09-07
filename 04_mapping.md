@@ -14,13 +14,18 @@ author: "Faculty of Informatics, Masaryk University"
 
 ## 🧬 9:35 – 10:00 Mapping & Visualization
 
-When you are interested in studying methylation with long reads, you first need to ensure that you're using the appropriate dataset that carries methylation information. For long reads, this will be typically stored in a bam file within so called "methylation tags", that carry both the information about the positions of the nucleotides you're interested in studying the modification of, such as methylated cytosines, as well as the probability that such modifications are real, provided that the basecalled nucleotide is correct.  
+When studying methylation with long reads, the first step is to make sure you’re working with a dataset that actually contains methylation information. For long-read sequencing, this information is usually stored in a BAM file under methylation tags. These tags record both:
 
-*Note:* Consider also the biological source of your data. For example, amplified DNA will have no modified nucleotides. In another example, 5hmC will be rare in certain tissues (and common in a brain tissue).
+- the genomic positions of nucleotides of interest (e.g., methylated cytosines)  
+- the probability that the modification is real (assuming the basecalled nucleotide itself is correct)  
 
-In order to map reads, we first need to use a mapper that is suitable for long reads. Two great choices are minimap2 and winnowmap (optimized for highly repetitive genomic regions). Since minimap2 is a versatile aligner, we need to specify the type of reads we will be working with, as HiFi and ONT (nanopore) will have different error profiles. Moreover, recent R10 chemistries for the Oxford Nanopore have base qualities approaching HiFi, and are thus more accurate than older R9 flowcells. 
+⚠️ Important reminder: always consider the biological source of your data. For instance, amplified DNA won’t contain any modifications at all. Similarly, 5hmC will be rare in most tissues, but quite common in brain tissue.
 
-``
+To map reads, we need a mapper designed for long-read data. Two excellent options are:  
+minimap2 – versatile and widely used  
+winnowmap – optimized for  repetitive regions  
+
+When using minimap2, remember to specify the type of reads you’re working with, since HiFi and ONT (nanopore) have different error profiles. Also, keep in mind that recent R10 nanopore chemistries achieve base qualities close to HiFi, making them more accurate than the older R9 flowcells.
 
 Now let's map our reads:
 ```bash
@@ -28,18 +33,30 @@ samtools fastq -T MM,ML unmapped.bam | minimap2 -ax map-ont -y -R "@RG\tID:KCNQ1
 samtools index KCNQ1OT1.bam
 ``` 
 
-First, we carry over our methylation tags and pass them to **minimap2**. Note that this code pipes fastq reads that carry methylation tags in their header, but you could just as easily use both fastq/bam. Do not forget to sort and index the final bam file, as this will be requested by all the downstream applications. 
+First, we carry over our methylation tags and pass them to **minimap2**. Note that this code pipes fastq reads that carry methylation tags in their header, but you could just as well use fastq/bam. Do not forget to sort and index the final bam file, as this will be requested by all the downstream applications. 
 
-In real life, you might consider creating and indexed reference, so that mapping of the reads becomes significantly faster. Our bam file has now been converted from unmapped bam file to a mapped bam file (sometimes called modbam to emphasize the presence of modifications). Note that mapped bam file can be converted back to unmapped if needed, for example should the reads be re-mapped to another reference. An unmapped bam file is often called ubam.
+In practice, it’s often useful to create an indexed reference, since this makes the mapping process much faster. At this point, our BAM file has been converted from an unmapped BAM into a mapped BAM. When methylation information is included, this is sometimes called a modBAM to highlight the presence of modifications. Keep in mind that a mapped BAM can also be converted back into an unmapped version if you ever need to re-map the reads to a different reference. An unmapped BAM is often referred to as a uBAM.
 
-Let's check that we have not accidentally dropped the methylation tags. Note that the typical bam file without modification won't have MM, ML tags present. If you see MM, ML tags, but they are not followed by any numbers, this means the modification have been called, but not found (and the reason for this will be typically biological, not technical). Note that MM tag defines the positions of modified nucleotides, and ML the probability of the modifications. Multiple modifications can be defined in a single file. Note that when analyzing 5mC, this does not mean that all cytosined will be enumerated. In fact, many C nucleotides will typically be skipped (check samtools specification for more details on how this is defined).  
+Let's check that we have not accidentally dropped the methylation tags. Note that the typical bam file without modification won't have MM, ML tags present. If you see MM, ML tags, but they are not followed by any numbers, this means the modification have been called, but not found (and the reason for this will be typically biological, not technical). 
+
+The MM tags define the positions of modified nucleotides, and ML the probability of modifications. Multiple modifications can be defined in a single file. When analyzing 5mC, keep in mind that not every cytosine will be listed in the tags. In fact, many cytosines are usually skipped. The exact rules for how this is determined are described in the SAMtools and modkit documentation.
 
 ```bash
 samtools view KCNQ1OT1.bam | egrep -o 'MM:Z:[^[:space:]]+'
 samtools view KCNQ1OT1.bam | egrep -o 'ML:B:[^[:space:]]+'
 ```
 
-Awesome, now we have a bam file with confirmed methylation tags. In order to visualize it, we can use either IGV or UCSC Genome browser. To do this, we either need to use one of the references pre-loaded by IGV, or a custom reference. The sequence names, typically chromosome, need to match between our bam file and the reference. Note that both reference and the bam file can be either loaded remotely (for example if hosted on a website) or present locally. Let's open IGV and explore. Navigate to the location of KCNQ1OT1, by typing it into the search. Do you recognize this gene? Turn the methylation on. What do you see? Does this match your expectation? 
+Great! We now have a BAM file with confirmed methylation tags. The next step is to visualize the data using a tool like IGV or the UCSC Genome Browser.  
+
+To do this, you’ll need a reference genome—either one of the pre-loaded references in IGV or your own custom reference. Make sure that the sequence names (such as chromosome labels) are consistent between your BAM file and the reference. Both the reference and the BAM file can be loaded either locally (from your computer) or remotely (for example, from a website).  
+
+Let’s try this in IGV:  
+- Open IGV and load the hg38 reference, in our case represented by the provided file `GCA_000001405.15_GRCh38_no_alt_analysis_set.fna`
+- Load your BAM file  
+- In the search bar, type KCNQ1OT1 to jump to that gene  
+- Turn on the methylation track  
+
+Do you recognize this gene? What do you observe in the methylation pattern—and does it match what you expected?
 
 
 
