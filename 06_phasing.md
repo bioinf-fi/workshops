@@ -84,6 +84,6 @@ samtools index KCNQ1OT1.h2.bam
 
 Clear your IGV session with File -> New session. Then load both bam files, representing the two haplotypes. You can just drag and drop them to your IGV screen. If your alignments are taking too much space, right click and use "Collapsed" option. 
 
-Check out the coordinates `chr11  2696182 2703266`. What do you think? This is the region that definitely seems differentially methylated between the two haplotypes. Let's explore it further. 
+Check out the coordinates `chr11  2696182 2703266`. Now turn the methylation back on. What do you think? This is the region that definitely seems differentially methylated between the two haplotypes, would you agree? Let's explore it further. 
 
 
