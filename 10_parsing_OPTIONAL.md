@@ -12,7 +12,7 @@ author: "Faculty of Informatics, Masaryk University"
 
 # Bioinformatics workshop
 
-## 🧬 11:50 – 12:20 Parsing bam files from python
+## 🧬 ? – ? Parsing bam files from python
 
 Pysam is a comprehensive Python library designed for working with BAM files (documentation available at pysam.readthedocs.io
 ). It provides robust functionality for parsing BAM files and extracting user-defined information in a flexible and efficient manner.  
