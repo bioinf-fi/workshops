@@ -38,7 +38,7 @@ zcat KCNQ1OT1.vcf.gz | egrep --color 2696063
 zcat KCNQ1OT1.vcf.gz | egrep --color 2696082
 ```
 
-Take a look at the 0/1 notation in the VCF. This tells us that one allele matches the reference (0) and the other is the alternative (1). But notice the 0/1 is written with a slash (/)—not a pipe (|). That means the variants are unphased.
+Take a look at the 0/1 notation in the VCF. This tells us that one allele matches the reference (0) and the other is the alternative allele (1). But notice the 0/1 is written with a slash (/)—not a pipe (|). That means the variants are unphased.
 
 Why does this matter? Because each variant is being reported on its own. From this output alone, we can’t tell whether the reads carrying a C at position 2,696,063 are the same reads that also carry a G at position 2,696,082.
 
@@ -68,7 +68,7 @@ samtools index KCNQ1OT1.haplotagged.bam
 ```
 Notice and explore one of the output files, `haplotypes.tsv`.
 
-1. Open the BAM file in **IGV**.  
+1. Open the haplotagged BAM (`KCNQ1OT1.haplotagged.bam`) file in **IGV**.  
 2. Right-click on the BAM track and select **Color alignments by → tag**.  
 3. Enter **HP** as the tag and click **OK**. 
 
