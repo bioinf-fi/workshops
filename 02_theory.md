@@ -19,6 +19,18 @@ Slides, theory: [link](https://docs.google.com/presentation/d/1-ekXEGOxl5r3urT2R
 
 Slides, basecalling: [link](https://docs.google.com/presentation/d/1mcIcODsIgeSKjFlYZFalc06g7sxTqXuN5KdFk4JsVWs/edit?usp=sharing)  
 
+### Preparation ###
+
+Download and open Integrative Genomics Viewer
+1) [Go to igv.org](https://igv.org)
+2) Select IGV Desktop application
+3) Select Download IGV (left menu)
+4) Select the top option -- IGV for Linux, Java included
+5) Wait for the download to finish
+6) Click to extract the downloaded folder
+7) Open terminal (left panel), and navigate to the downloaded folder, such as "Stazene", then follow the nested structure until you see `igv.sh`
+8) Type `./igv.sh` to open and use IGV
+
 ### Visualizing the methylation in long reads ###
 
 For our first exercise, we will visualize the methylation in pre-generated files with long reads. We will display them in IGV, a popular viewer for genomic data. Our files will be remotely hosted, so that we do not need to download them due to their large size. 
