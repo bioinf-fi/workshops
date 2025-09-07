@@ -20,6 +20,9 @@ In this section, we’ll learn how to call methylation from a pileup of reads th
 We’ll use modkit for this task. Here’s an example command:  
 
 ```bash
+# first quickly index the .fna:
+samtools faidx GCA_000001405.15_GRCh38_no_alt_analysis_set.fna
+# then proceed with modkit:
 modkit pileup \
     KCNQ1OT1.bam KCNQ1OT1.modkit.bedgraph \
     --filter-threshold C:0.8 \
