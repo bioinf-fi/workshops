@@ -14,12 +14,12 @@ author: "Faculty of Informatics, Masaryk University"
 
 ## 🧬 8:30 – 8:45 Important workshop information
 
-**HOW TO LOGIN TO THE COMPUTERS IN A219**  
+### **HOW TO LOGIN TO THE COMPUTERS IN A219**  
 Everyone will use the same guest account, with the same username and password.  
 *guest00*  
 *fibioinfo25*  
 
-**DOWNLOAD THIS FOLDER NOW**  
+### **DOWNLOAD THIS FOLDER NOW**  
 This will take a few minutes, so please get started now and download the following folder:  
 https://drive.google.com/drive/folders/1OhD8guYEJQ4_Y3Dvws0272YS4bqzlJ6Y?usp=sharing  
 
@@ -27,22 +27,33 @@ https://drive.google.com/drive/folders/1OhD8guYEJQ4_Y3Dvws0272YS4bqzlJ6Y?usp=sha
 - Participants: who uses methylation and why  
 - Collect questions  
 
-**DOWNLOAD THE DOCKER CONTAINER WITH INSTALLED TOOLS**  
-- build the docker image with the pre-installed tools and dependencies today by running:
+### **OBTAIN THE DOCKER IMAGE WITH INSTALLED TOOLS**
+
+**Option A: Build from source (7-10m)**
+
+```bash
+git clone git@github.com:bioinf-fi/docker.git
+cd docker
+make build # or explicitly: podman build --load -t bioinf-fi/ontmet:latest -f ontmet.Dockerfile . 
+```
+
+**Option B: Import from pre-built image file (1m)** 
+
+```bash
+podman import /var/tmp/ontmet.tar.gz bioinf-fi/ontmet:latest
+```
+
+**Prepare working dir and run**
+
+  ```bash
+  mkdir workshop
+  chown $(id -u):$(id -g) workshop
+  cd workshop
   
-  `podman build -t bioinf-fi/ontmet:latest -f ontmet.Dockerfile .`
+  podman run -it --rm --user $(id -u):$(id -g) -v "workshop:/data" bioinf-fi/ontmet:latest bash
+  ```
 
-  or, preferably, skip the build and import with:
-  
-  `podman import /var/tmp/ontmet.tar.gz bioinf-fi/ontmet:latest`
-
-  then run:
-
-  `mkdir data && chown data`
-  
-  `podman run -it --rm --user $(id -u):$(id -g) -v "data:/data" bioinf-fi/ontmet:latest bash`
-
-  # 👩‍🏫 Workshop Teaching Assistants
+# 👩‍🏫 Workshop Teaching Assistants
 
 We are excited to introduce our **Teaching Assistants (TAs)** who will be supporting the workshop.  
 
