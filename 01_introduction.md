@@ -39,6 +39,7 @@ https://drive.google.com/drive/folders/1OhD8guYEJQ4_Y3Dvws0272YS4bqzlJ6Y?usp=sha
   then run:
 
   `mkdir data && chown data`
+  
   `podman run -it --rm --user $(id -u):$(id -g) -v "data:/data" bioinf-fi/ontmet:latest bash`
 
   # 👩‍🏫 Workshop Teaching Assistants
