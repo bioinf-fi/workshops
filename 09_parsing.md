@@ -14,7 +14,12 @@ author: "Faculty of Informatics, Masaryk University"
 
 ## 🧬 11:50 – 12:20 Parsing bam files from python
 
-Pysam is a powerful python library from parsing bam files, see https://pysam.readthedocs.io/en/latest/index.html. It allows versatility in parsing bam files and extracting user-defined useful information. SAM format can be a bit difficult to parse with all the tags, and various separators. We would strongly advise against parsing SAM/BAM files without the appropriate library, like pysam. In the simplest case, one could loop through all sequencing reads one by one, and extract their MM, ML tags `read.get_tag("MM")` and `read.get_tag("MM")`. Here is an example of a small script that parses a BAM, and filters out problematic reads with no Ml tags. 
+Pysam is a comprehensive Python library designed for working with BAM files (documentation available at pysam.readthedocs.io
+). It provides robust functionality for parsing BAM files and extracting user-defined information in a flexible and efficient manner.  
+
+Given the complexity of the SAM/BAM format—with its numerous tags and delimiters—it is strongly recommended to use a specialized library such as pysam, rather than attempting to parse these files manually.  
+
+In the simplest case, one could loop through all sequencing reads one by one, and extract their MM, ML tags `read.get_tag("MM")` and `read.get_tag("MM")`. The following script separates reads based on the presence of the Ml tag in a BAM file, writing reads with the tag to one output and reads without the tag to another. It also reports the number of reads lacking the Ml tag. (Note that SAM/BAM tag names are case-sensitive; this example targets Ml. Adjust as needed if your data use ML.)  
 
 - **Parsing in pysam**:
 
@@ -44,4 +49,4 @@ print("Done. Output file created. The number of reads with missing Ml tags: ", c
 print("Please modify the script if you wish to filter ML and not Ml tags. ")
 ```
 
-The code should be fairly self-explanatory. For the last exercise, parse your bam file in order to only print 5mC, and ignore 5hmC. There are multiple ways to do this, depending on your initial bam files; the main goal of this exercise is to learn how to access methylation tags from within python. 
+The code should be largely self-explanatory. As a final exercise, parse your BAM file so that you print only 5mC calls while excluding 5hmC. There are multiple valid approaches depending on how your BAM encodes modifications; the primary objective is to practice accessing and interpreting methylation tags in Python.
