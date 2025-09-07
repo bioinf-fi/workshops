@@ -52,7 +52,7 @@ podman import /var/tmp/ontmet.tar.gz bioinf-fi/ontmet:latest
 
   # copy the downloaded files here
   
-  podman run -it --rm --user $(id -u):$(id -g) -v "$PWD:/data" bioinf-fi/ontmet:latest bash
+  podman run -it --rm --user $(id -u):$(id -g) -v "$PWD:/data:Z,U" bioinf-fi/ontmet:latest bash
   ```
 
 # 👩‍🏫 Workshop Teaching Assistants
