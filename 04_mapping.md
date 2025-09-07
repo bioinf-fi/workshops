@@ -54,7 +54,7 @@ Let’s try this in IGV:
 - Open IGV and load the hg38 reference, in our case represented by the provided file `GCA_000001405.15_GRCh38_no_alt_analysis_set.fna`
 - Load your BAM file  
 - In the search bar, type KCNQ1OT1 to jump to that gene  
-- Turn on the methylation track  
+- Turn on the methylation  
 
 Do you recognize this gene? What do you observe in the methylation pattern—and does it match what you expected?
 
