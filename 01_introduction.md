@@ -14,7 +14,7 @@ author: "Faculty of Informatics, Masaryk University"
 
 ## 🧬 8:30 – 8:45 Important workshop information
 
-**HOW TO LOGIN TO THE COMPUTERS IN A219**
+**HOW TO LOGIN TO THE COMPUTERS IN A219**  
 Everyone will use the same guest account, with the same username and password.  
 *guest00*  
 *fibioinfo25*  
