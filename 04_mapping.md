@@ -51,7 +51,7 @@ Great! We now have a BAM file with confirmed methylation tags. The next step is 
 To do this, you’ll need a reference genome—either one of the pre-loaded references in IGV or your own custom reference. Make sure that the sequence names (such as chromosome labels) are consistent between your BAM file and the reference. Both the reference and the BAM file can be loaded either locally (from your computer) or remotely (for example, from a website).  
 
 Let’s try this in IGV:  
-- Open IGV and load the hg38 reference, in our case represented by the provided file `GCA_000001405.15_GRCh38_no_alt_analysis_set.fna`
+- Open IGV and load your old-fashioned hg38 reference that is already pre-loaded in your IGV (do not use a custom reference this time), alongside its annotated genes
 - Load your BAM file  
 - In the search bar, type KCNQ1OT1 to jump to that gene  
 - Turn on the methylation (depending on your version of IGV, you might want to right-click on the reads, select "Color alignments by", and then pick "*base modification 2-color (5mC)*")
