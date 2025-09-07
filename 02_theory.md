@@ -37,12 +37,12 @@ For our first exercise, we will visualize the methylation in pre-generated files
 
 To get started, we will use a remotely located genome (in Fasta format), mapped reads (in BAM format, loaded as a File), and annotations (in BED format, also loaded as a File). The location of these files is the following:
 
-Genome:
-`https://public.gi.ucsc.edu/~mcechova/pedigree/PAN027/assembly.v1.0.PAN027.diploid.fa`
-ONT reads:
-`https://public.gi.ucsc.edu/~mcechova/pedigree/alignment/PAN027.filtered.ONT.bam`
-Centromeric and satellite annotations (centromere is in red):
-`https://public.gi.ucsc.edu/~mcechova/pedigree/annotations/PAN027/assembly.v1.0.PAN027.diploid.cenSat.bed`
+Genome:  
+`https://public.gi.ucsc.edu/~mcechova/pedigree/PAN027/assembly.v1.0.PAN027.diploid.fa`  
+ONT reads:  
+`https://public.gi.ucsc.edu/~mcechova/pedigree/alignment/PAN027.filtered.ONT.bam`  
+Centromeric and satellite annotations (centromere is in red):  
+`https://public.gi.ucsc.edu/~mcechova/pedigree/annotations/PAN027/assembly.v1.0.PAN027.diploid.cenSat.bed`  
 
 Let's start exploring methylation in IGV!  
 
