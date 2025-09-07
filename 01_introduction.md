@@ -15,28 +15,27 @@ author: "Faculty of Informatics, Masaryk University"
 ## 🧬 8:30 – 8:45 Important workshop information
 
 **HOW TO LOGIN TO THE COMPUTERS IN A219**
-Everyone will use the same guest account, with the same username and password.
-*guest00*
-*fibioinfo25*
+Everyone will use the same guest account, with the same username and password.  
+*guest00*  
+*fibioinfo25*  
 
-**DOWNLOAD THIS FOLDER NOW**
-This will take a few minutes, so please get started now and download the following folder:
-https://drive.google.com/drive/folders/1OhD8guYEJQ4_Y3Dvws0272YS4bqzlJ6Y?usp=sharing
+**DOWNLOAD THIS FOLDER NOW**  
+This will take a few minutes, so please get started now and download the following folder:  
+https://drive.google.com/drive/folders/1OhD8guYEJQ4_Y3Dvws0272YS4bqzlJ6Y?usp=sharing  
 
 - Welcome & overview  
 - Participants: who uses methylation and why  
 - Collect questions  
 
-**DOWNLOAD THE DOCKER CONTAINER WITH INSTALLED TOOLS**
+**DOWNLOAD THE DOCKER CONTAINER WITH INSTALLED TOOLS**  
 - build the docker image with the pre-installed tools and dependencies today by running:
   `podman import /var/tmp/ontmet.tar.gz  bioinf-fi/ontmet:latest`
   followed by
-  `docker build -t bioinf-fi/ontmet:latest -f ontmet.Dockerfile .`
+  `podman run -it --rm -v "$PWD:/data" localhost/ontmet:latest bash`
 
   # 👩‍🏫 Workshop Teaching Assistants
 
 We are excited to introduce our **Teaching Assistants (TAs)** who will be supporting the workshop.  
-They bring diverse expertise and are here to guide you through hands-on sessions, and answer questions.
 
 ---
 
