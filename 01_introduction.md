@@ -49,8 +49,10 @@ podman import /var/tmp/ontmet.tar.gz bioinf-fi/ontmet:latest
   mkdir workshop
   chown $(id -u):$(id -g) workshop
   cd workshop
+
+  # copy the downloaded files here
   
-  podman run -it --rm --user $(id -u):$(id -g) -v "workshop:/data" bioinf-fi/ontmet:latest bash
+  podman run -it --rm --user $(id -u):$(id -g) -v "$PWD:/data" bioinf-fi/ontmet:latest bash
   ```
 
 # 👩‍🏫 Workshop Teaching Assistants
