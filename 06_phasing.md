@@ -14,32 +14,35 @@ author: "Faculty of Informatics, Masaryk University"
 
 ## 🧬 10:30 – 11:00 Phasing & Methylation
 
-We typed `KCNQ1OT1` in the IGV search window. What do you know about this genomic region? Do we expect it to be methylated or unmethylated?
+As before, we will be exploring the gene `KCNQ1OT1`, by typing its name in the IGV search. What do you know about this genomic region? 
 
-
-Let's explore the variants in our mapped file. Let us now zoom in to this region:
+Now, let’s dig deeper into the variants in our mapped file. Zoom in to this coordinate range:
 `chr11:2,696,051-2,696,106`
 
-What do you notice about the reads carrying the variants at positions 2696063 and 2696082?
+Take a close look at the reads.  
+What do you notice about the variants at positions at positions 2696063 and 2696082?  
 
-Let's output all variants into a VCF file. How do we do this? We use mapped reads to call variants.
-This time, we will use a naive variant caller from bcftools. 
-*Note:* do not do this at home! Use a more sophisticated variant caller for your research projects instead. 
+Finally, let’s try exporting all variants into a VCF file. To do this, we’ll call variants directly from the mapped reads. For the sake of this workshop, we’ll use the naive variant caller included with bcftools:
+
+⚠️ Important: This is just a demo. For real projects, always use a specialized variant caller—they’re far more accurate and reliable.
 
 ```bash
 bcftools mpileup KCNQ1OT1.bam --fasta-ref GCA_000001405.15_GRCh38_no_alt_analysis_set.fna | bcftools call -mv -Oz -o KCNQ1OT1.vcf.gz
 tabix -p vcf KCNQ1OT1.vcf.gz
 ```
-Load the `KCNQ1OT1.vcf.gz` file with variants into IGV and take a look. Are the variants you're observing in the reads called as you would expect? 
+Now, load the `KCNQ1OT1.vcf.gz` file with the variant calls into IGV.
+As you inspect the reads, ask yourself: Do the variants you see match what you would expect from the data? Let's check how are these variants represented in the VCF file:  
 
 ```bash
 zcat KCNQ1OT1.vcf.gz | egrep --color 2696063
 zcat KCNQ1OT1.vcf.gz | egrep --color 2696082
 ```
 
-Notice the 0/1 notation. This means that we observe one reference allele (0) and one alternative allele (1). However, these are not phased, hence */*.
+Take a look at the 0/1 notation in the VCF. This tells us that one allele matches the reference (0) and the other is the alternative (1). But notice the 0/1 is written with a slash (/)—not a pipe (|). That means the variants are unphased.
 
-This is because both of these variants are reported independently. From this output, it is not clear whether the reads carrying C at the position 2696063 also carry G at the position 2696082, or not. Let's phase them!
+Why does this matter? Because each variant is being reported on its own. From this output alone, we can’t tell whether the reads carrying a C at position 2,696,063 are the same reads that also carry a G at position 2,696,082.
+
+So—let’s solve this problem by phasing the variants!
 
 - Phase variants with **WhatsHap**:
 
@@ -48,7 +51,7 @@ whatshap phase --reference GCA_000001405.15_GRCh38_no_alt_analysis_set.fna KCNQ1
 tabix -p vcf KCNQ1OT1.phased.vcf.gz
 ```
 
-(Note that you could extend the haplotype blocks using the methylation information and the new tool called **Pomfret**. But that is a story for another time.)
+(As a side note: haplotype blocks can also be extended using methylation information with a newer tool called Pomfret—but that’s a topic for another time.)
 
 ```bash
 zcat KCNQ1OT1.phased.vcf.gz | egrep --color 2696063
