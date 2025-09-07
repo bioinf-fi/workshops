@@ -29,9 +29,10 @@ https://drive.google.com/drive/folders/1OhD8guYEJQ4_Y3Dvws0272YS4bqzlJ6Y?usp=sha
 
 **DOWNLOAD THE DOCKER CONTAINER WITH INSTALLED TOOLS**  
 - build the docker image with the pre-installed tools and dependencies today by running:  
-  `podman import /var/tmp/ontmet.tar.gz  bioinf-fi/ontmet:latest`  
-  followed by  
-  `podman run -it --rm -v "$PWD:/data" localhost/ontmet:latest bash`  
+  `podman build -t ont-meth:latest -f ontmet.Dockerfile`
+  `docker run -it --rm  --user $(id -u):$(id -g) -v "$PWD:/data" bioinf-fi/ont-meth:latest bash`
+  or, preferably, skip these steps and import/run with:  
+  `podman import /var/tmp/ontmet.tar.gz  bioinf-fi/ont-meth:latest` 
 
   # 👩‍🏫 Workshop Teaching Assistants
 
