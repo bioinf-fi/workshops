@@ -53,6 +53,7 @@ In this exercise, we’ll work with data from an individual named PAN027. Specif
 
 Let's zoom in to see the alignments. Do you see any methylation? Probably not. We need to turn on the coloring by methylation first. Let's try:  
 *Right click -> Color alignments by -> base modification (5mC)*  
+Careful, depending on your version of IGV, you might want to use *base modification 2-color (5mC)* instead.
 
 We should see two colors, red (hypermethylation) and blue (hypomethylation). We know that centromeres are highly methylated, with a single exception -- the location where the CENP-A protein binds, the site of the kinetochore assembly. 
 
