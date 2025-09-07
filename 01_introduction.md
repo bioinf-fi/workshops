@@ -33,7 +33,7 @@ https://drive.google.com/drive/folders/1OhD8guYEJQ4_Y3Dvws0272YS4bqzlJ6Y?usp=sha
 
 ```bash
 git clone git@github.com:bioinf-fi/docker.git
-cd docker
+cd docker/ontmet
 make build # or explicitly: podman build --load -t bioinf-fi/ontmet:latest -f ontmet.Dockerfile . 
 ```
 
