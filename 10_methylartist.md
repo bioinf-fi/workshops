@@ -10,11 +10,7 @@ author: "Faculty of Informatics, Masaryk University"
   <img src="assets/logo_fi_mu.png" alt="Faculty of Informatics, Masaryk University" width="180"/>
 </p>
 
----
-title: "Bioinformatics Workshop"
-author: "Faculty of Informatics, Masaryk University"
-date: "2025-09-05"
----
+# Bioinformatics workshop
 
 ## 🧬 11:50 – 12:20 Exploring DNA Methylation with Methylartist   
 
