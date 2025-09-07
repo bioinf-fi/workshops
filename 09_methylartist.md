@@ -23,3 +23,5 @@ methylartist locus -b KCNQ1OT1.h2.bam -i chr11:2606328-2701998 -o kcnq1ot1_hap2 
 
 Methylartist will now plot all methylated Cs, separately for each haplotype. Compare the two generated plots visually. Do the results match your expectations? 
 
+Congratulations! You have now completed all the workshop materials! 🎉
+
