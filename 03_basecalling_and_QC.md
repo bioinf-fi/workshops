@@ -19,11 +19,11 @@ author: "Faculty of Informatics, Masaryk University"
 Following the live demo on basecalling, let's now get a better "feel" for the quality of the individual basecalling models. In order to QC nanopore reads, nanoplot is a convenient and versatile option. In the folder `basecalled`, you will find three basecalled fastq datasets, each basecalled with one of the models. Let's now compare their quality.
 
 ```bash
-NanoPlot --fastq fast.fastq -o "nanoplot.fast"
+NanoPlot --fastq fast.fastq -o "nanoplot.fast" --no_static
 
-NanoPlot --fastq hac.fastq -o "nanoplot.hac"
+NanoPlot --fastq hac.fastq -o "nanoplot.hac" --no_static
 
-NanoPlot --fastq sup.fastq -o "nanoplot.sup"
+NanoPlot --fastq sup.fastq -o "nanoplot.sup" --no_static
 ```
 
 What do you think? Is the wait for the better model to finish worth it to you?
