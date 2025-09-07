@@ -68,7 +68,9 @@ Once it’s loaded, ask yourself:
   -What do you see if you include 5hmC instead of ignoring it?  
   -And finally, how does the output differ if you don’t use the --bedgraph option at all?  
 
-Congratulations—you’ve completed this section! If you have some extra time, we encourage you to explore the modkit documentation. There are many additional options available, and each can shape your results in different ways. Ultimately, the best settings will depend on the biological question you’re trying to answer.
+Congratulations—you’ve completed this section! You can now go on a coffee break. 
+
+If you have some extra time, we encourage you to explore the modkit documentation. There are many additional options available, and each can shape your results in different ways. Ultimately, the best settings will depend on the biological question you’re trying to answer.
 
 
 
