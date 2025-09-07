@@ -16,8 +16,8 @@ author: "Faculty of Informatics, Masaryk University"
 
 First, let's plot our bam files:
 ```bash
-methylartist locus -b KCNQ1OT1.h1.bam -i chr11:2606328-2701998 -o kcnq1ot1_hap1 -n KCNQ1OT1_hap1 --genes KCNQ1OT1 --motif CG --ref GCA_000001405.15_GRCh38_no_alt_analysis_set.fna
-methylartist locus -b KCNQ1OT1.h2.bam -i chr11:2606328-2701998 -o kcnq1ot1_hap2 -n KCNQ1OT1_hap2 --genes KCNQ1OT1 --motif CG --ref GCA_000001405.15_GRCh38_no_alt_analysis_set.fna
+methylartist locus -b KCNQ1OT1.h1.bam -i chr11:2606328-2701998 -o kcnq1ot1_hap1 -n KCNQ1OT1_hap1 --genes KCNQ1OT1 --mods m --motif CG --ref GCA_000001405.15_GRCh38_no_alt_analysis_set.fna
+methylartist locus -b KCNQ1OT1.h2.bam -i chr11:2606328-2701998 -o kcnq1ot1_hap2 -n KCNQ1OT1_hap2 --genes KCNQ1OT1 --mods m --motif CG --ref GCA_000001405.15_GRCh38_no_alt_analysis_set.fna
 
 ```
 
