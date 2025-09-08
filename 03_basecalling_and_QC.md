@@ -29,6 +29,7 @@ NanoPlot --fastq sup.fastq -o "nanoplot.sup" --no_static
 ## Viewing the results
 
 ```bash
+# Outside of image, on the host machine run:
 cd $HOME/workshop/nanoplot.fast
 ```
 
