@@ -35,11 +35,7 @@ make build ENGINE=podman # or explicitly: podman build --load -t bioinf-fi/ontme
 
 **Option B: Import from pre-built image file (1m)** 
 
-```bash
-podman import /var/tmp/ontmet.tar.gz bioinf-fi/ontmet:latest
-```
-
-**Prepare working dir and run**
+**Run the pre-built image file**
 
   ```bash
   
