@@ -38,7 +38,8 @@ make build ENGINE=podman # or explicitly: podman build --load -t bioinf-fi/ontme
 **Run the pre-built image file**
 
   ```bash
-  
+  cd $HOME
+  cd workshop
   podman run -it --rm --user $(id -u):$(id -g) -v "$PWD:/data:Z,U" bioinf-fi/ontmet:latest bash
   ```
 
