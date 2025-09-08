@@ -22,10 +22,14 @@ Inside the folder `basecalled`, you’ll find three FASTQ datasets, each generat
 
 ```bash
 NanoPlot --fastq fast.fastq -o "nanoplot.fast" --no_static
-
 NanoPlot --fastq hac.fastq -o "nanoplot.hac" --no_static
-
 NanoPlot --fastq sup.fastq -o "nanoplot.sup" --no_static
+```
+
+## Viewing the results
+
+```bash
+cd $HOME/workshop/nanoplot.fast
 ```
 
 What do you think? Is the wait for the better model to finish worth it to you?
