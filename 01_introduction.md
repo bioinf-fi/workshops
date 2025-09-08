@@ -19,10 +19,6 @@ Everyone will use the same guest account, with the same username and password.
 *guest00*  
 *fibioinfo25*  
 
-### **DOWNLOAD THIS FOLDER NOW**  
-This will take a few minutes, so please get started now and download the following folder:  
-https://drive.google.com/drive/folders/1OhD8guYEJQ4_Y3Dvws0272YS4bqzlJ6Y?usp=sharing  
-
 - Welcome & overview  
 - Participants: who uses methylation and why  
 - Collect questions  
@@ -46,11 +42,6 @@ podman import /var/tmp/ontmet.tar.gz bioinf-fi/ontmet:latest
 **Prepare working dir and run**
 
   ```bash
-  mkdir workshop
-  chown $(id -u):$(id -g) workshop
-  cd workshop
-
-  # copy the downloaded files here
   
   podman run -it --rm --user $(id -u):$(id -g) -v "$PWD:/data:Z,U" bioinf-fi/ontmet:latest bash
   ```
