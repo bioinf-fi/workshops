@@ -14,12 +14,19 @@ author: "Faculty of Informatics, Masaryk University"
 
 ## 🧬 8:45 – 9:15 The theoretical Background
 
-### Presentations from today ###
+### Presentations from today
 Slides, theory: [link](https://docs.google.com/presentation/d/1-ekXEGOxl5r3urT2RA2TePoSYZ_5Q0hyZjvXNBWIOZA/edit?usp=sharing)  
 
 Slides, basecalling: [link](https://docs.google.com/presentation/d/1mcIcODsIgeSKjFlYZFalc06g7sxTqXuN5KdFk4JsVWs/edit?usp=sharing)  
 
-### Preparation ###
+### Preparation
+
+#### Option A: For participants of workshop at A219
+
+1) Navigate to your $HOME/IGV_Linux_2.19.5
+2) Run `./igv.sh`
+
+#### Option B: Download
 
 Download and open Integrative Genomics Viewer
 1) [Go to igv.org](https://igv.org)
