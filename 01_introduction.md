@@ -25,7 +25,7 @@ Everyone will use the same guest account, with the same username and password.
 
 ### **OBTAIN THE DOCKER IMAGE WITH INSTALLED TOOLS**
 
-**Option A: Build from source (7-10m)**
+**Option A: Build from source (7-10m) (*SKIP* THIS IF ON THE COMPUTERS IN A219)**
 
 ```bash
 git clone git@github.com:bioinf-fi/docker.git
@@ -33,7 +33,7 @@ cd docker/ontmet
 make build ENGINE=podman # or explicitly: podman build --load -t bioinf-fi/ontmet:latest -f ontmet.Dockerfile . 
 ```
 
-**Option B: Import from pre-built image file (1m)** 
+**Option B: Import from pre-built image file (*USE THIS* ON THE COMPUTERS IN A219)** 
 
 **Run the pre-built image file**
 
