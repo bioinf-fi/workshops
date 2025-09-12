@@ -12,6 +12,8 @@ author: "Faculty of Informatics, Masaryk University"
 
 # Bioinformatics workshop
 
+[The input files are here](https://drive.google.com/drive/folders/1OhD8guYEJQ4_Y3Dvws0272YS4bqzlJ6Y)
+
 ## 🧬 9:35 – 10:00 Mapping & Visualization
 
 When studying methylation with long reads, the first step is to make sure you’re working with a dataset that actually contains methylation information. For long-read sequencing, this information is usually stored in a BAM file under methylation tags. These tags record both:
