@@ -1,6 +1,5 @@
 # T2T Genome Assembly workshop
 
-# Bioinformatics workshop
 
 ## 🧬 8:30 – 8:45 Important workshop information
 
@@ -46,20 +45,20 @@ We are excited to introduce teachers who will be supporting the workshop.
 ---
 
 ## 2. Matej Lexa
-<img src="assets/lexa" alt="Matej Lexa" width="200">
+<img src="assets/lexa.jpeg" alt="Matej Lexa" width="200">
 
 - 🎓 Associate Professor at the Faculty of Informatics
 
 ---
 
 ## 3. Oliver Purnoch
-<img src="assets/purnoch" alt="Oliver Purnoch" width="200">
+<img src="assets/purnoch.jpeg" alt="Oliver Purnoch" width="200">
 
 - 🎓 BS Student at the Faculty of Informatics
 
 ---
 ## 4. Hana Boháčová
-<img src="assets/bohacova" alt="Hana Bohacova" width="200">
+<img src="assets/bohacova.jpeg" alt="Hana Bohacova" width="200">
 
 - 🎓 MS Student at the Faculty of Informatics
 
