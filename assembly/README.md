@@ -17,8 +17,8 @@ Everyone will use the same guest account, with the same username and password.
 
 ```bash
 git clone git@github.com:bioinf-fi/docker.git
-cd docker/ontmet
-make build ENGINE=podman # or explicitly: podman build --load -t bioinf-fi/ontmet:latest -f ontmet.Dockerfile . 
+cd docker/assembly
+make build ENGINE=podman # or explicitly: podman build --load -t bioinf-fi/assembly:latest -f assembly.Dockerfile . 
 ```
 
 **Option B: Import from pre-built image file (*USE THIS* ON THE COMPUTERS IN A219)** 
@@ -28,7 +28,7 @@ make build ENGINE=podman # or explicitly: podman build --load -t bioinf-fi/ontme
   ```bash
   cd $HOME
   cd workshop
-  podman run -it --rm --user $(id -u):$(id -g) -v "$PWD:/data:Z,U" bioinf-fi/ontmet:latest bash
+  podman run -it --rm --user $(id -u):$(id -g) -v "$PWD:/data:Z,U" bioinf-fi/assembly:latest bash
   ```
 
 # 👩‍🏫 Workshop Lecturers and Teaching Assistants
