@@ -1,6 +1,6 @@
 # Analyze a single chromosome
 
-In this section, you will learn how to perform basic checks for an assembly. To simplify this process, we will first analyze a single chromosome. 
+In this section, you will learn how to perform basic checks for an assembly. To simplify this process, we will first analyze a single chromosome. Please download this mystery chromosome from [here.](https://is.muni.cz/el/fi/podzim2025/PV269/um/mystery/mystery.fasta)
 
 ## Chromosome name
 
