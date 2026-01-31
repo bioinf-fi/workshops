@@ -3,8 +3,8 @@
 ## Input data
 When you're assembling a genome, your first question will be: do I have data of sufficient quality to generate a high quality genome assembly? To answer this, you will need to first QC your input data. 
 
-`NanoPlot --fastq hifi.toy.fastq --no_static -o "nanoplot.hifi.toy"` \
-`NanoPlot --fastq ONT.toy.fastq --no_static -o "nanoplot.ONT.toy" ` 
+`NanoPlot --fastq hifi.toy.fastq -o "nanoplot.hifi.toy" --no_static` \
+`NanoPlot --fastq ONT.toy.fastq -o "nanoplot.ONT.toy" --no_static` 
 
 What's the quality of your input reads? What is their length distribution? Do you have both high-accuracy reads, as well as ultra-long reads. For a human genome, what is the coverage of the sample you just analyzed? Coverage is probably the most important factor when assembling a genome, provided that reads have sufficient length. In order to attempt a diploid assembky, you will need the coverage of at least 40x. In human, it is customary to use a genome size value around ~3.1 * 10-9. 
 
