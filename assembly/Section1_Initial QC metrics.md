@@ -3,12 +3,14 @@
 ## Input data
 When you're assembling a genome, your first question will be: do I have data of sufficient quality to generate a high quality genome assembly? To answer this, you will need to first QC your input data. 
 
-`cd workdir`
-`mkdir nanoplot`
-`cd nanoplot`
-`NanoPlot --fastq ../../datasets/hifi.toy.fastq -o "nanoplot.hifi.toy" --no_static` \
-`NanoPlot --fastq ../../datasets/ONT.toy.fastq -o "nanoplot.ONT.toy" --no_static`
-`cd ..`
+```bash
+cd workdir
+mkdir nanoplot
+cd nanoplot
+NanoPlot --fastq ../../datasets/hifi.toy.fastq -o "nanoplot.hifi.toy" --no_static
+NanoPlot --fastq ../../datasets/ONT.toy.fastq -o "nanoplot.ONT.toy" --no_static
+cd ..
+```
 
 What's the quality of your input reads? What is their length distribution? Do you have both high-accuracy reads, as well as ultra-long reads. For a human genome, what is the coverage of the sample you just analyzed? Coverage is probably the most important factor when assembling a genome, provided that reads have sufficient length. In order to attempt a diploid assembly, you will need the coverage of at least 40x. In human, it is customary to use a genome size value around ~3.1 * 10-9. 
 
@@ -20,10 +22,12 @@ After obtaining an assembly, the first question is how many sequences were assem
 
 then run quast on the downloaded file from a workdir/quast subdirectory
 
-`mkdir quast`
-`cd quast`
-`quast.py ../dataset/assembly.Exercise8.fa`
-`cd ..`
+```bash
+mkdir quast
+cd quast
+quast.py ../dataset/assembly.Exercise8.fa
+cd ..
+```
 
 Quast provides several useful metrics, including N50, that was historically used to understand the assembly contiguity. N50 is defined as the shortest sequence length such that 50% of the total assembly length is contained in contigs or scaffolds of size greater than this length. A higher N50 indicates better, more contiguous assembly. However, in the world of complete chromosomes, this metric becomes much less useful. 
 
