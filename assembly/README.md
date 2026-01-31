@@ -9,14 +9,27 @@ Everyone will use the same guest account, with the same username and password.
 *fibioinfo26*  
 
 - Welcome & overview  
-- Collect questions  
+- Collect questions
+
+### **SET UP YOUR WORKING DIRECTORIES IN YOUR HOME FOLDER**
+Commands here can be copied into a terminal (bash command line prompt, more specifically). Everything after a # symbol is considered a comment by bash and has no effect on the command preceding it.
+
+```bash
+# return to your home directory (the tilde is actually optional and you may replace it by a path to set up shop elsewhere)
+cd ~
+# Download the repository with instructions and input data
+git clone https://github.com/bioinf-fi/workshops.git
+# Create a directory to keep intermediate files and output of various software tools
+mkdir workshops/assembly/workdir
+```
 
 ### **OBTAIN THE DOCKER IMAGE WITH INSTALLED TOOLS**
 
 **Option A: Build from source (7-10m) (*SKIP* THIS IF ON THE COMPUTERS IN A219)**
 
 ```bash
-git clone git@github.com:bioinf-fi/docker.git
+cd ~
+git clone https://github.com/bioinf-fi/docker.git
 cd docker/assembly
 make build ENGINE=podman # or explicitly: podman build --load -t bioinf-fi/assembly:latest -f assembly.Dockerfile . 
 ```
@@ -26,8 +39,8 @@ make build ENGINE=podman # or explicitly: podman build --load -t bioinf-fi/assem
 **Run the pre-built image file**
 
   ```bash
-  cd $HOME
-  cd workshop
+  cd $HOME # same as cd ~
+  cd workshops
   podman run -it --rm --user $(id -u):$(id -g) -v "$PWD:/data:Z,U" bioinf-fi/assembly:latest bash
   ```
 
