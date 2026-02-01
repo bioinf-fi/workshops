@@ -24,7 +24,7 @@ then run quast on the downloaded file from the workdir subdirectory (quast saves
 
 `quast.py ../datasets/assembly.Exercise8.fa`
 
-Quast provides several useful metrics, including N50, that was historically used to understand the assembly contiguity. N50 is defined as the shortest sequence length such that 50% of the total assembly length is contained in contigs or scaffolds of size greater than this length. A higher N50 indicates better, more contiguous assembly. However, in the world of complete chromosomes, this metric becomes much less useful. 
+Explore files in quast_results/latest either through the command line (head, more, grep), or via your web browser. Quast provides several useful metrics, including N50, that was historically used to understand the assembly contiguity. N50 is defined as the shortest sequence length such that 50% of the total assembly length is contained in contigs or scaffolds of size greater than this length. A higher N50 indicates better, more contiguous assembly. However, in the world of complete chromosomes, this metric becomes much less useful. 
 
 ## The visualization of assembly contiguity
 
