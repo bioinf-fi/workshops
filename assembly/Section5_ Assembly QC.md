@@ -2,7 +2,15 @@
 
 In order to understand which QC datasets and general annotations are useful and/or available, let's use complete, diploid genome HG002 as an example. Because the genome is diploid, we will have 23 maternal and 23 paternal chromosomes available. We can therefore choose whether we want to use maternal or paternal genome as our reference.
 
-The list of T2T genomes is available at this [UCSC genome browser hub] (https://genome.ucsc.edu/cgi-bin/hgHubConnect?hgHub_do_redirect=on&genome=HG002v1.1.PAT&hubUrl=https://research.nhgri.nih.gov/CustomTracks/T2T_hubs/T2Tgenomes/hub.txt). Let's select paternal genome version 1.1. This is a big genome with lots of tracks, so pick a smaller region if the tracks are not loading. You can type the coordinates in the search bar and hit enter Let's go over some QC tracks now:
+The list of T2T genomes is available at this [UCSC genome browser hub] (https://genome.ucsc.edu/cgi-bin/hgHubConnect?hgHub_do_redirect=on&genome=HG002v1.1.PAT&hubUrl=https://research.nhgri.nih.gov/CustomTracks/T2T_hubs/T2Tgenomes/hub.txt). Let's select paternal genome version 1.1. This is a big genome with lots of tracks, so pick a smaller region if the tracks are not loading. You can type the coordinates in the search bar and hit enter 
+
+## Exploration
+
+This section will be exploratory, letting you play around to understand the various types of annotation. Click on on annotation name will show you a help page with detailed descriptions. Note that Tools -> Table browser will allow you to directly download any annotation of interest. 
+
+## QC
+
+Let's go over some QC tracks now:
 
 <img src="assets/GB_assembly_and_validation.png" alt="GB_assembly_and_validation.png" width="900">
 Let's turn on some diagnostic plots and hit refresh. 
@@ -24,6 +32,7 @@ Combined functionality of Flagger and Nucfreq developed by another group, tends 
 *Nucfreq:*
 Nucfreq calculates the minor allele frequency. Note that in haplotyoe-resolved assemblies, all mapped reads should support the nucleotide in the reference, and other than (sometimes systematic) sequencing errors, no variation is expected.  
 
+## Annotation
 
 Let's also cover some general annotations:
 
