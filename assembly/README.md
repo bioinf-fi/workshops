@@ -27,7 +27,9 @@ Initially, you will need to point your browser to two resources, the workshop gi
 
 `firefox https://github.com/bioinf-fi/workshops &`
 
-another one describes the software contents of the container image we are going to use below and some hints on how the software can be used.
+another one describes the software contents of the container image we are going to use below and some hints on how the software can be used:
+
+`firefox https://github.com/bioinf-fi/docker &`
 
 There is also a working directory to watch, which at this point will be empty:
 
