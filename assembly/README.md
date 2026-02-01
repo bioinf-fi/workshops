@@ -1,7 +1,7 @@
 # T2T Genome Assembly workshop
 
 
-## 🧬 8:30 – 8:45 Important workshop information
+## 🧬 8:30 – 8:50 Important workshop information and Introduction
 
 ### **HOW TO LOGIN TO THE COMPUTERS IN A219**  
 Everyone will use the same guest account, with the same username and password.  
