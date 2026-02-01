@@ -31,7 +31,7 @@ mkdir workshops/assembly/workdir
 cd ~
 git clone https://github.com/bioinf-fi/docker.git
 cd docker/assembly
-make build ENGINE=podman # or explicitly: podman build --load -t bioinf-fi/assembly:latest -f assembly.Dockerfile . 
+make build ENGINE=podman # or explicitly: podman build --load -t localhost/genome-assembly:latest -f assembly.Dockerfile . 
 ```
 
 **Option B: Import from pre-built image file (*USE THIS* ON THE COMPUTERS IN A219)** 
