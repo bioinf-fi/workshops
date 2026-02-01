@@ -15,8 +15,8 @@ Study all possible input data combinations available at the manual page of hifia
 
 ## verkko
 
-`curl -L https://obj.umiacs.umd.edu/sergek/shared/ecoli_hifi_subset24x.fastq.gz -o hifi.fastq.gz`\
-`curl -L https://obj.umiacs.umd.edu/sergek/shared/ecoli_ont_subset50x.fastq.gz -o ont.fastq.gz`\
+`curl -L https://obj.umiacs.umd.edu/sergek/shared/ecoli_hifi_subset24x.fastq.gz -o hifi.fastq.gz` (118 MB)\
+`curl -L https://obj.umiacs.umd.edu/sergek/shared/ecoli_ont_subset50x.fastq.gz -o ont.fastq.gz` (244 MB)\
 `verkko -d asm --hifi ./hifi.fastq.gz --nano ./ont.fastq.gz`
 
 While verkko is more dependent on specific input data type requirements, when those are provided, it is arguably the best diploid assembler. In this exercise, we will use a toy E. coli K12 example, so this assembly should run quite fast (~5 minutes). 
