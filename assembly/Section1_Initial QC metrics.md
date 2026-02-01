@@ -1,11 +1,21 @@
 # Initial QC metrics
 
+Prerequisite is to have an active bash session in the `genome-assembly` docker container:
+
+```bash
+# on the host machine in the `workshops` repository clone directory run:
+cd assembly
+workspace/run.sh start
+```
+
 ## Input data
 
 When you're assembling a genome, your first question will be: do I have data of sufficient quality to generate a high quality genome assembly? To answer this, you will need to first QC your input data.
 
 ```bash
-cd workspace
+# inside the container
+
+cd /data/workspace
 NanoPlot --fastq ../datasets/hifi.toy.fastq -o "nanoplot.hifi.toy" --no_static
 NanoPlot --fastq ../datasets/ONT.toy.fastq -o "nanoplot.ONT.toy" --no_static
 ```
@@ -16,11 +26,15 @@ What's the quality of your input reads? What is their length distribution? Do yo
 
 After obtaining an assembly, the first question is how many sequences were assembled. In an ideal case, each chromosome would be represented by exactly one sequences. However, occassionally chromosomes can be broken into two or three pieces, especially in the most repetitive parts of the genome, such as centromeres. To get a quick feel for how many sequences were assembled, and especially when comparing multiple assemblies, we recommend running the tool called quast. To do this, first download a [diploid human assembly](https://public.gi.ucsc.edu/~mcechova/teaching/assembly.Exercise8.fa) to work with
 
-`wget -O ../datasets/assembly.Exercise8.fa https://public.gi.ucsc.edu/~mcechova/teaching/assembly.Exercise8.fa`
+```bash
+wget -O ../datasets/assembly.Exercise8.fa https://public.gi.ucsc.edu/~mcechova/teaching/assembly.Exercise8.fa
+```
 
 then run quast on the downloaded file from the workspace subdirectory (quast saves its output into a new folder quast_results, so we do not need to create it in advance)
 
-`quast.py ../datasets/assembly.Exercise8.fa`
+```bash
+quast.py ../datasets/assembly.Exercise8.fa
+```
 
 Explore files in quast_results/latest either through the command line (head, more, grep), or via your web browser. Quast provides several useful metrics, including N50, that was historically used to understand the assembly contiguity. N50 is defined as the shortest sequence length such that 50% of the total assembly length is contained in contigs or scaffolds of size greater than this length. A higher N50 indicates better, more contiguous assembly. However, in the world of complete chromosomes, this metric becomes much less useful.
 
