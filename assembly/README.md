@@ -65,19 +65,19 @@ make build ENGINE=podman # or explicitly: podman build --load -t localhost/genom
 ### Download Resources (or make sure you have them already)
 
 ```bash
-cd ~/workshops
+cd ~/workshops/assembly/datasets
 # 5.6 GB
-wget -O ../datasets/assembly.Exercise8.fa https://public.gi.ucsc.edu/~mcechova/teaching/assembly.Exercise8.fa
+wget -O assembly.Exercise8.fa https://public.gi.ucsc.edu/~mcechova/teaching/assembly.Exercise8.fa
 # 150 MB
-wget -O ../datasets/mystery.fasta https://is.muni.cz/el/fi/podzim2025/PV269/um/mystery/mystery.fasta
+wget -O mystery.fasta https://is.muni.cz/el/fi/podzim2025/PV269/um/mystery/mystery.fasta
 # 936 MB
-wget -O ../datasets/chm13.fa.gz https://s3-us-west-2.amazonaws.com/human-pangenomics/T2T/CHM13/assemblies/analysis_set/chm13v2.0.fa.gz
+wget -O chm13.fa.gz https://s3-us-west-2.amazonaws.com/human-pangenomics/T2T/CHM13/assemblies/analysis_set/chm13v2.0.fa.gz
 # 23 MB
-wget -O ../datasets/chr11-2M.fa.gz https://github.com/chhylp123/hifiasm/releases/download/v0.7/chr11-2M.fa.gz
+wget -O chr11-2M.fa.gz https://github.com/chhylp123/hifiasm/releases/download/v0.7/chr11-2M.fa.gz
 # 118 MB
-wget -O ../datasets/hifi.fastq.gz https://obj.umiacs.umd.edu/sergek/shared/ecoli_hifi_subset24x.fastq.gz
+wget -O hifi.fastq.gz https://obj.umiacs.umd.edu/sergek/shared/ecoli_hifi_subset24x.fastq.gz
 # 244 MB
-wget -O ../datasets/ont.fastq.gz https://obj.umiacs.umd.edu/sergek/shared/ecoli_ont_subset50x.fastq.gz
+wget -O ont.fastq.gz https://obj.umiacs.umd.edu/sergek/shared/ecoli_ont_subset50x.fastq.gz
 ```
 
 # 👩‍🏫 Workshop Lecturers and Teaching Assistants
