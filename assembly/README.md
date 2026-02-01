@@ -52,8 +52,10 @@ make build ENGINE=podman # or explicitly: podman build --load -t localhost/genom
 
   ```bash
   cd $HOME # same as cd ~
-  cd workshops/assembly
-  podman run -it --rm --user $(id -u):$(id -g) -v "$PWD:/data:Z,U" bioinf-fi/assembly:latest bash
+  cd workshops/assembly/workspace
+  ./run.sh start
+  # if a specific image name is needed pass it as an --image arg:
+  ./run.sh start --image genome-assembly
   ```
 
 # 👩‍🏫 Workshop Lecturers and Teaching Assistants
