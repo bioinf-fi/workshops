@@ -19,20 +19,21 @@ Commands here can be copied into a terminal (bash command line prompt, more spec
 cd ~
 # Download the repository with instructions and input data
 git clone https://github.com/bioinf-fi/workshops.git
-# Create a directory to keep intermediate files and output of various software tools
-mkdir workshops/assembly/workdir
 ```
+Inside the directory tree (explore it using the ls command) you will find a directory called assembly for today's workshop. There is also assembly/workspace, a subdirectory where you will work and save all your ouotput and intermediate files.
 
 ### **OPEN A WEB BROWSER TO POINT YOU TO IMPORTANT RESOURCES**
-Initially, you will need to point your browser to two resources, the workshop github page (it is the same content you copied to a local directory with GIT above):
+Initially, you will need to point your browser to two resources, the workshop github pages (one is the same content you copied to a local directory with GIT above):
 
 `firefox https://github.com/bioinf-fi/workshops &`
 
-and the working directory we just created, which at this point will be empty:
+another one describes the software contents of the container image we are going to use below and some hints on how the software can be used.
 
-`firefox file:///mnt/data/guest00/workshops/assembly/workdir/ &`
+There is also a working directory to watch, which at this point will be empty:
 
-Note: Omit the firefox command if not running web browser from the command line.
+`firefox file:///mnt/data/guest00/workshops/assembly/workspace/ &`
+
+Note: Omit the firefox command and use just the URL if not running web browser from the command line.
 
 ### **OBTAIN THE DOCKER IMAGE WITH INSTALLED TOOLS**
 
