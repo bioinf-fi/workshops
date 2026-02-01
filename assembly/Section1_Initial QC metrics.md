@@ -30,12 +30,14 @@ Explore files in quast_results/latest either through the command line (head, mor
 
 To better understand the number of assembled sequences and their lengths, we can visualize them in a graph structure, using the .gfa format. While .gfa format can carry nucleotide sequences, in this case we will choose the version without it, for a faster visualization. The file we will be using is called *assembly.homopolymer-compressed.noseq.gfa* and should be located within the provided datasets for the workshop.
 
-Let's open bandage, a java based application that can visualize this type of files. To upload the file, click File -> Load graph. Subsequently, click on "Draw graph" on the left panel of bandage. What do you see? What happens if you click on one of the sequences? In an ideal case, how many sequences would you expect to see for a complete assembled diploid human genome? Finally, note that both verkko and hifiasm will output .gfa as one of the outputs of the assembly.
+Let's open bandage, a java based application that can visualize this type of files. To upload the file, click File -> Load graph. Subsequently, click on "Draw graph" on the left panel of bandage. What do you see? What happens if you click on one of the sequences? In an ideal case, how many sequences would you expect to see for a complete assembled diploid human genome? Please, compare your graph with your neighbors in the classroom, have you noticed anything interesting?
+
+Note: Please, note that both verkko and hifiasm will output .gfa as one of the outputs of the assembly.
 
 
 ## The visualization of a phased diploid human genome
 
-Now that you understand how the genomes can be visualized using bandage, you might be interested in knowing which chromosomes originate from mother, and which chromosomes originate from father. This process is called phasing, and the theory behind it will be covered in one of the next sections. Here, we will just load the annotations of maternal and paternal chromosomes, stored in a .csv file. In our case, this file is called *assembly.colors.csv*, and is located within the provided datasets for the workshop.
+Now that you understand how the genomes can be visualized using bandage, you might be interested in knowing which chromosomes originate from mother, and which chromosomes originate from father. This process is called haplotyping or phasing (the two are used interchangeably but have slightly different meanings originally), and the theory behind it will be covered in one of the next sections. Here, we will just load the annotations of maternal and paternal chromosomes, stored in a .csv file. In our case, this file is called *assembly.colors.csv*, and is located within the provided datasets for the workshop.
 
 Load annotation.csv file. The individual sequences are now colored. The parent of origin is not the only information that can be used for coloring -- you can use any annotation, including chromosome number or gene names.
 
