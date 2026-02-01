@@ -1,5 +1,7 @@
 # Run hifiasm and verkko
 
+In this exercise, you will finally assemble some data, yeay! Here, we will try hifiasm (expect ~2-minute run) and verkko (expect ~5-minute run).
+
 ## hifiasm
 
 Hifiasm is a true workhorse assembler, especially suitable for non-model organisms, or when limited data is available (for the ideal T2T recipe and diploid human genomes, verkko outperforms hifiasm at the time of the preparation of workshop materials). 
