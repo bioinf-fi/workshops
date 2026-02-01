@@ -12,7 +12,7 @@ This section will be exploratory, letting you play around to understand the vari
 
 Let's go over some QC tracks now:
 
-<img src="assets/GB_assembly_and_validation.png" alt="GB_assembly_and_validation.png" width="900">
+<img src="assets/GB_assembly_and_validation.png" alt="GB_assembly_and_validation.png" width="1200">
 Let's turn on some diagnostic plots and hit refresh. 
 
 You will see suspicious regions, issues track that includes annotation from NucFlag, erroneous k-mers, as well ad NucFreq tracks on both PacBio and Nanopore. 
