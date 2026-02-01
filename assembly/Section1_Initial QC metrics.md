@@ -4,7 +4,7 @@
 When you're assembling a genome, your first question will be: do I have data of sufficient quality to generate a high quality genome assembly? To answer this, you will need to first QC your input data. 
 
 ```bash
-cd workdir
+cd workspace
 mkdir nanoplot
 cd nanoplot
 NanoPlot --fastq ../../datasets/hifi.toy.fastq -o "nanoplot.hifi.toy" --no_static
@@ -20,7 +20,7 @@ After obtaining an assembly, the first question is how many sequences were assem
 
 `wget -O ../datasets/assembly.Exercise8.fa https://public.gi.ucsc.edu/~mcechova/teaching/assembly.Exercise8.fa`
 
-then run quast on the downloaded file from the workdir subdirectory (quast saves its output into a new folder quast_results, so we do not need to create it in advance)
+then run quast on the downloaded file from the workspace subdirectory (quast saves its output into a new folder quast_results, so we do not need to create it in advance)
 
 `quast.py ../datasets/assembly.Exercise8.fa`
 
