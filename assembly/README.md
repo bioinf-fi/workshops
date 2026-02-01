@@ -40,7 +40,7 @@ make build ENGINE=podman # or explicitly: podman build --load -t localhost/genom
 
   ```bash
   cd $HOME # same as cd ~
-  cd workshops
+  cd workshops/assembly
   podman run -it --rm --user $(id -u):$(id -g) -v "$PWD:/data:Z,U" bioinf-fi/assembly:latest bash
   ```
 
