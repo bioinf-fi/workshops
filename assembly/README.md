@@ -23,6 +23,16 @@ git clone https://github.com/bioinf-fi/workshops.git
 mkdir workshops/assembly/workdir
 ```
 
+### **OPEN A WEB BROWSER TO POINT YOU TO IMPORTANT RESOURCES**
+Initially, you will need to point your browser to two resources, the workshop github page (it is the same content you copied to a local directory with GIT above):
+
+`firefox https://github.com/bioinf-fi/workshops`
+
+and the working directory we just created, which at this point will be empty:
+
+`firefox file:///mnt/data/guest00/workshops/assembly/workdir/ &`
+
+
 ### **OBTAIN THE DOCKER IMAGE WITH INSTALLED TOOLS**
 
 **Option A: Build from source (7-10m) (*SKIP* THIS IF ON THE COMPUTERS IN A219)**
