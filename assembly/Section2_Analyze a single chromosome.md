@@ -46,7 +46,7 @@ We already know a lot about this mystery sequence but we still don't know for su
 
 ```bash
 mkdir mashmap
-mashmap --noSplit -t 4 -k 31 --pi 95 -r [your favorite reference genome] -q mashmap/mystery.fasta
+mashmap --noSplit -t 4 -k 31 --pi 95 -r [your favorite reference genome] -q mystery.fasta -o mashmap/mashmap.out
 ```
 
 You can download CHM13 reference genome from [its github repository.](https://github.com/marbl/CHM13/tree/master?tab=readme-ov-file#downloads).
