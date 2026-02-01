@@ -32,6 +32,7 @@ and the working directory we just created, which at this point will be empty:
 
 `firefox file:///mnt/data/guest00/workshops/assembly/workdir/ &`
 
+Note: Omit the firefox command if not running web browser from the command line.
 
 ### **OBTAIN THE DOCKER IMAGE WITH INSTALLED TOOLS**
 
