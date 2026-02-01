@@ -9,7 +9,7 @@ cmd_download() {
 }
 
 cmd_start() {
-    local image="bioinf-fi/assembly"
+    local image="localhost/genome-assembly"
     local container_runtime="podman"
     
     # Parse optional arguments
