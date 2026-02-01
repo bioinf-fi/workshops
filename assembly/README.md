@@ -93,5 +93,12 @@ We are excited to introduce teachers who will be supporting the workshop.
 
 ---
 
-## 📌 Note
-Teachers will be available anytime during the workshop, as well as during the coffee break
+## 5. Honza Kotrs
+<img src="assets/kotrs.png" alt="Honza Kotrs" width="200">
+
+- 🎓 PhD Student at the Faculty of Informatics
+
+---
+
+## Big thank you to Martin Klimeš from unix@fi.muni.cz
+- 🎓 Technical support (guest accounts, docker image, filesystem)
