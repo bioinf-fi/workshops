@@ -12,11 +12,13 @@ Here, we used '^' symbol to specify that we expect this symbol to be present at 
 
 ## Chromosome length
 
-Maybe the length of the sequence can give us a clue about which chromosome this is. While there are many ways to count the sequence length, one of the most convenient is running bioawk
+Maybe the length of the sequence can give us a clue about which chromosome this is. While there are many ways to count the sequence length, one of the most convenient is running [bioawk](https://github.com/lh3/bioawk).
 
 `bioawk -c fastx '{ print $name, length($seq) }' < mystery.fasta`
 
 What is the length of this chromosome? If you knew that this sequence comes from human, what chromosomes would be most likely hits? If you are unsure about the lengths of chromosomes in human, now would be a good time to look them up. Note your guess for later :-)
+
+Note: If you are curious about bioawk, https://pmitev.github.io/to-awk-or-not/Bio/bioawk/ shows a useful table of names for columns with different bio formats invoked by the -c argument.
 
 ## Telomeres
 
