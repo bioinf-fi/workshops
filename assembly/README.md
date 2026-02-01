@@ -20,7 +20,7 @@ cd ~
 # Download the repository with instructions and input data
 git clone https://github.com/bioinf-fi/workshops.git
 ```
-Inside the directory tree (explore it using the ls command) you will find a directory called assembly for today's workshop. There is also assembly/workspace, a subdirectory where you will work and save all your ouotput and intermediate files.
+Inside the directory tree (explore it using the ls command) you will find a directory called assembly for today's workshop. There is also assembly/workspace, a subdirectory where you will work and save all your output and intermediate files.
 
 ### OPEN A WEB BROWSER TO POINT YOU TO IMPORTANT RESOURCES
 Initially, you will need to point your browser to two resources, the workshop github pages (one is the same content you copied to a local directory with GIT above):
