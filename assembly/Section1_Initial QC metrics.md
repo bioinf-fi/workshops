@@ -25,7 +25,7 @@ then run quast on the downloaded file from a workdir/quast subdirectory
 ```bash
 mkdir quast
 cd quast
-quast.py ../dataset/assembly.Exercise8.fa
+quast.py ../datasets/assembly.Exercise8.fa
 cd ..
 ```
 
