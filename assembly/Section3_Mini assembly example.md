@@ -19,9 +19,8 @@ Study all possible input data combinations available at the manual page of hifia
 ## verkko
 
 ```bash
-# 118 MB
+# only download if not in A219 (otherwise look in workshops/assembly/datasets)
 wget -O ../datasets/hifi.fastq.gz https://obj.umiacs.umd.edu/sergek/shared/ecoli_hifi_subset24x.fastq.gz
-# 244 MB
 wget -O ../datasets/ont.fastq.gz https://obj.umiacs.umd.edu/sergek/shared/ecoli_ont_subset50x.fastq.gz
 verkko -d asm --hifi ../datasets/hifi.fastq.gz --nano ../datasets/ont.fastq.gz
 ```
