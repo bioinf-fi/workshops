@@ -29,6 +29,7 @@ What's the quality of your input reads? What is their length distribution? Do yo
 After obtaining an assembly, the first question is how many sequences were assembled. In an ideal case, each chromosome would be represented by exactly one sequences. However, occassionally chromosomes can be broken into two or three pieces, especially in the most repetitive parts of the genome, such as centromeres. To get a quick feel for how many sequences were assembled, and especially when comparing multiple assemblies, we recommend running the tool called quast. To do this, first download a [diploid human assembly](https://public.gi.ucsc.edu/~mcechova/teaching/assembly.Exercise8.fa) to work with
 
 ```bash
+# only download if not in A219 (otherwise look in workshops/assembly/datasets)
 wget -O ../datasets/assembly.Exercise8.fa https://public.gi.ucsc.edu/~mcechova/teaching/assembly.Exercise8.fa
 ```
 
