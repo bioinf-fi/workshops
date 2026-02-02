@@ -1,5 +1,7 @@
 # Initial QC metrics
 
+Note that after opening the terminal, you can locate `workshops` folder. Inside the workshops folder, you can locate our `assembly` folder. All the input files will be available to you in the `datasets` folder, and you will run your commands in the `workspace` folder. 
+
 Prerequisite is to have an active bash session in the `genome-assembly` docker container:
 
 ```bash
