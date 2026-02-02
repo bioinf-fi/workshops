@@ -8,6 +8,7 @@ Hifiasm is a true workhorse assembler, especially suitable for non-model organis
 
 ```bash
 # Run on test data (use -f0 for small datasets)
+# only download if not in A219 (otherwise look in workshops/assembly/datasets)
 wget -O ../datasets/chr11-2M.fa.gz https://github.com/chhylp123/hifiasm/releases/download/v0.7/chr11-2M.fa.gz
 hifiasm -o test -t4 -f0 ../datasets/chr11-2M.fa.gz 2> test.log
 awk '/^S/{print ">"$2;print $3}' test.bp.p_ctg.gfa > test.p_ctg.fa  # get primary contigs in FASTA
