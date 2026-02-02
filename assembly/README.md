@@ -11,7 +11,9 @@ Everyone will use the same guest account, with the same username and password.
 - Welcome & overview  
 - Collect questions
 
-### SET UP YOUR WORKING DIRECTORIES IN YOUR HOME FOLDER
+[Link to slides for today.](https://docs.google.com/presentation/d/1tF-ZZGkq4xX2VoaSyoKUuFGW2pK_CFLx9siCbj-aX-w/edit?usp=sharing)
+
+### SKIP TO SECTION 1 if you're located in A219
 
 Commands here can be copied into a terminal (bash command line prompt, more specifically). Everything after a # symbol is considered a comment by bash and has no effect on the command preceding it.
 
@@ -24,21 +26,7 @@ git clone https://github.com/bioinf-fi/workshops.git
 
 Inside the directory tree (explore it using the ls command) you will find a directory called assembly for today's workshop. There is also assembly/workspace, a subdirectory where you will work and save all your output and intermediate files.
 
-### OPEN A WEB BROWSER TO POINT YOU TO IMPORTANT RESOURCES
 
-Initially, you will need to point your browser to two resources, the workshop github pages (one is the same content you copied to a local directory with GIT above):
-
-`firefox https://github.com/bioinf-fi/workshops &`
-
-another one describes the software contents of the container image we are going to use below and some hints on how the software can be used:
-
-`firefox https://github.com/bioinf-fi/docker &`
-
-There is also a working directory to watch, which at this point will be empty:
-
-`firefox file:///mnt/data/guest00/workshops/assembly/workspace/ &`
-
-Note: Omit the firefox command and use just the URL if not running web browser from the command line.
 
 ### OBTAIN THE DOCKER IMAGE WITH INSTALLED TOOLS
 
