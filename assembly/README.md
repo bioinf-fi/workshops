@@ -12,6 +12,7 @@ Everyone will use the same guest account, with the same username and password.
 - Collect questions
 
 [Link to slides for today.](https://docs.google.com/presentation/d/1tF-ZZGkq4xX2VoaSyoKUuFGW2pK_CFLx9siCbj-aX-w/edit?usp=sharing)
+[Ask us a question!](https://app.sli.do/event/tW9eWukM8RDRzbxkZ8NnEz/live/questions)
 
 ### SKIP TO SECTION 1 if you're located in A219
 
