@@ -13,19 +13,19 @@ The way how to run assemblies on your data without any setup.
 - Many tools (>10,500 in the Galaxy Tool Shed)
 - Popular (>13,000 publications)
 - Extensive tutorials available
+- Workflows!
 
 ## Demo Basics
 
-- Explore interface layout: https://usegalaxy.org
+- Explore interface layout: https://usegalaxy.cz
 - Basic building pieces: tools, toolform, history, workflows
 - More at https://training.galaxyproject.org/training-material/topics/introduction/
 
 ## Galaxy Workflow Ecosystem
 
-- https://iwc.galaxyproject.org/
 - https://dockstore.org/organizations/iwc
 - https://workflowhub.eu/projects/33/workflows
-
+- https://iwc.galaxyproject.org
 
 ## Vertebrate Genome Project
 
