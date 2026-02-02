@@ -4,7 +4,7 @@ Prerequisite is to have an active bash session in the `genome-assembly` docker c
 
 ```bash
 # on the host machine in the `workshops` repository clone directory run:
-cd assembly
+cd workshops/assembly
 workspace/run.sh start
 ```
 
