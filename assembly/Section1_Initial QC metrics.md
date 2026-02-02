@@ -45,7 +45,7 @@ Explore files in quast_results/latest either through the command line (head, mor
 
 To better understand the number of assembled sequences and their lengths, we can visualize them in a graph structure, using the .gfa format. While .gfa format can carry nucleotide sequences, in this case we will choose the version without it, for a faster visualization. The file we will be using is called *assembly.homopolymer-compressed.noseq.gfa* and should be located within the provided datasets for the workshop.
 
-Let's open bandage (simply run `Bandage` from within the container, note the capital B), a java based application that can visualize this type of files. To upload the file, click File -> Load graph. Subsequently, click on "Draw graph" on the left panel of bandage. What do you see? What happens if you click on one of the sequences? In an ideal case, how many sequences would you expect to see for a complete assembled diploid human genome? Please, compare your graph with your neighbors in the classroom, have you noticed anything interesting?
+Let's open bandage (simply run `Bandage` from within the container, note the capital B), a java based application that can visualize this type of files. To upload the file, click File -> Load graph (If in A219 look inside /data when prompted for file). Subsequently, click on "Draw graph" on the left panel of bandage. What do you see? What happens if you click on one of the sequences? In an ideal case, how many sequences would you expect to see for a complete assembled diploid human genome? Please, compare your graph with your neighbors in the classroom, have you noticed anything interesting?
 
 Note: Please, note that both verkko and hifiasm will output .gfa as one of the outputs of the assembly.
 
