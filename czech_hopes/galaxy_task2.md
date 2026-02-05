@@ -7,7 +7,7 @@
 2. Pripojte sa na [https://usegalaxy.cz/join-training/czech-hopes-2026](https://usegalaxy.cz/join-training/czech-hopes-2026)
 
 ### Časť 2 - načítanie histórie
-Histories -> Public histories -> czech hopes 2026 (https://usegalaxy.eu/u/xpolako3/h/czech-hopes-2026) -> Import this history
+Histories -> Public histories -> czech hopes 2026 ([https://usegalaxy.eu/u/xpolako3/h/czech-hopes-2026](https://usegalaxy.eu/u/xpolako3/h/czech-hopes-2026-1)) -> Import this history
 
 ## TASK
 
