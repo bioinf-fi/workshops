@@ -4,7 +4,7 @@
 1. Prejdite na https://usegalaxy.cz/
 2. https://usegalaxy.cz/join-training/czech-hopes-2026 
 3. Load the data:
-   Histories -> Public histories -> czech hopes 2026 ([https://usegalaxy.eu/u/xpolako3/h/czech-hopes-2026](https://usegalaxy.eu/u/xpolako3/h/czech-hopes-2026-1)) -> Import this history
+   Histories -> Public histories -> czech hopes 2026 (https://usegalaxy.cz/join-training/czech-hopes-2026) -> Import this history
 
 ## TASK
 
