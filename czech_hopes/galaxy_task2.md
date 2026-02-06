@@ -1,13 +1,9 @@
 # Czech Hopes Workshop - Task 2 (GALAXY)
 
-## Prihlásenie a načítanie dát
-
-### Časť 1 - prihlásenie sa do Galaxy
-1. Vytvorte si účet na https://usegalaxy.cz/
-2. Pripojte sa na [https://usegalaxy.cz/join-training/czech-hopes-2026](https://usegalaxy.cz/join-training/czech-hopes-2026)
-
 ### Časť 2 - načítanie histórie
-Histories -> Public histories -> czech hopes 2026 ([https://usegalaxy.eu/u/xpolako3/h/czech-hopes-2026](https://usegalaxy.eu/u/xpolako3/h/czech-hopes-2026-1)) -> Import this history
+1. Prejdite na https://usegalaxy.eu/
+2. Load the data:
+   Histories -> Public histories -> czech hopes 2026 ([https://usegalaxy.eu/u/xpolako3/h/czech-hopes-2026](https://usegalaxy.eu/u/xpolako3/h/czech-hopes-2026-1)) -> Import this history
 
 ## TASK
 
