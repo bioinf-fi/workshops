@@ -3,7 +3,7 @@
 ## Prihlásenie a načítanie dát
 
 ### Časť 1 - prihlásenie sa do Galaxy
-1. Vytvorte si účet na https://usegalaxy.eu/
+1. Vytvorte si účet na https://usegalaxy.cz/
 2. Pripojte sa na [https://usegalaxy.cz/join-training/czech-hopes-2026](https://usegalaxy.cz/join-training/czech-hopes-2026)
 
 ### Časť 2 - načítanie histórie
