@@ -12,7 +12,7 @@ Instrukce v [samostatném dokumentu](galaxy_task2.md)
 
 
 ## spuštění vlastní úlohy Jupyter Lab
-! Tuto část dělejte pouze na pokyne instruktora ! - nejspíš už nám běží úlohy, které můžete využít
+! Tuto část dělejte pouze na pokyn instruktora ! - nejspíš už nám běží úlohy, které můžete využít
 1. Na levé liště [Galaxy](https://usegalaxy.eu/) klikněte na <b>Interactive tools</b> > <b>Interactive JupyterLab Notebook</b> > <b>Run Tool</b>. Na liště se zobrazí <b>JupyTool interactive tool Starting...</b>
 2. Poté, co se stav změní na <b>Running</b>, otevřete Notebook levým kliknutím myši
 3. V horním menu klikněte na <b>File</b> > <b>New</b> > <b>Terminal</b>
