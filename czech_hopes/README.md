@@ -1,3 +1,5 @@
+[Odkaz na slidy](https://docs.google.com/presentation/d/1H05QRsodDosMxCv40tSm88UG10Z662RFWN0DjrlpABg/edit?usp=sharing) 
+
 # Aktivita "Hledání mutací v reálných datech pomocí Galaxy"
 Instrukce v [samostatném dokumentu](galaxy_task2.md)
 # Aktivita "Detekce mutací <i>Plasmodia falciparum</i> pomocí bioinformatických nástrojů v příkazové řádce" - spuštění JupyterLab pracovního sešitu v Galaxy
