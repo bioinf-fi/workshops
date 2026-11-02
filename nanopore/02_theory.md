@@ -70,7 +70,7 @@ Type the following coordinates into IGV search window:
 
 Do you notice the red and blue regions in the reads? Try right-clicking and switching the view between expanded, collapsed, and squished. Which view do you find most useful?  
 
-Next, take a look at the methylation signal—does it appear more or less noisy than you expected? Keep in mind, these are older R9 reads from several years ago. Current sequencing technologies are much more accurate.  
+Next, take a look at the methylation signal—does it appear more or less noisy than you expected? 
 
 If you find yourself distracted by indels, you can right-click and adjust the indel threshold. This way, the visualization will focus on the consensus signal, while ignoring small errors from individual reads—whether those come from assembly or variant calling.  
 
