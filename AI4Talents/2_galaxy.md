@@ -22,9 +22,9 @@
 
 Importujte históriu s dátami:
 
-**Histories** → **Public histories** → **AI4Talents** → **Import this history**
+**Histories** → **Public histories** → **ai4talents_2** → **Import this history**
 
-> priamy odkaz: [usegalaxy.cz/u/1b8ea9192727427c9be06de5b9a904cd/h/ai4talents](https://usegalaxy.cz/u/1b8ea9192727427c9be06de5b9a904cd/h/ai4talents)
+> priamy odkaz: [usegalaxy.cz/u/1b8ea9192727427c9be06de5b9a904cd/h/ai4talents_2](https://usegalaxy.cz/u/1b8ea9192727427c9be06de5b9a904cd/h/ai4talents_2)
 
 
 

@@ -16,7 +16,7 @@ Na workshope si vyskúšate, ako bioinformatici hľadajú mutácie v DNA – v r
 |---|----------|---------|-------|
 | 2 | Hľadanie mutácií v reálnych (veľkých) dátach | Galaxy | 📄 [otvoriť návod](2_galaxy.md) |
 | 3 | Vizualizácia 3D štruktúry proteínov | Mol\* | 📄 [otvoriť návod](3_proteiny.md) |
-| 6A | Nájdite mutácie s pomocou AI agenta | Galaxy + AI agent | _pripravuje sa_ |
+| 6A | Nájdite mutácie s pomocou AI agenta | Galaxy + GalaxyAI | 📄 [otvoriť návod](6A_galaxy_ai.md) |
 | 6B | Alely naprieč kontinentmi | Galaxy + AI agent, Ensembl | _pripravuje sa_ |
 | 7 | Test DNA bez testu DNA – horkosť | ochutnávka | _pripravuje sa_ |
 
