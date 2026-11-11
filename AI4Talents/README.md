@@ -12,13 +12,13 @@ Na workshope si vyskúšate, ako bioinformatici hľadajú mutácie v DNA – v r
 
 ## Prehľad aktivít
 
-| # | Aktivita | Nástroj |
-|---|----------|---------|
-| 2 | [Hľadanie mutácií v reálnych (veľkých) dátach](galaxy_task2.md) | Galaxy |
-| 3 | [Vizualizácia 3D štruktúry proteínov](aktivita_3/README.md) | Mol\*, AlphaFold DB |
-| 6A | [Nájdite mutácie s pomocou AI agenta](aktivita_6A/README.md) | Galaxy + AI agent |
-| 6B | [Alely naprieč kontinentmi](aktivita_6B/README.md) | Galaxy + AI agent, Ensembl |
-| 7 | [Test DNA bez testu DNA – horkosť](aktivita_7/README.md) | ochutnávka |
+| # | Aktivita | Nástroj | Návod |
+|---|----------|---------|-------|
+| 2 | Hľadanie mutácií v reálnych (veľkých) dátach | Galaxy | 📄 [otvoriť návod](galaxy_task2.md) |
+| 3 | Vizualizácia 3D štruktúry proteínov | Mol\*, AlphaFold DB | _pripravuje sa_ |
+| 6A | Nájdite mutácie s pomocou AI agenta | Galaxy + AI agent | _pripravuje sa_ |
+| 6B | Alely naprieč kontinentmi | Galaxy + AI agent, Ensembl | _pripravuje sa_ |
+| 7 | Test DNA bez testu DNA – horkosť | ochutnávka | _pripravuje sa_ |
 
 ---
 
