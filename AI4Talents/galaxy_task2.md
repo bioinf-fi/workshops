@@ -4,7 +4,6 @@
 
 **Postup v skratke:** účet v Galaxy → načítanie dát → mapovanie (Map with BWA-MEM) → zobrazenie v prehliadači → nájdenie mutácie
 
----
 
 ## Krok 1: Pridanie sa do Galaxy skupiny
 
@@ -17,8 +16,7 @@
 3. Otvorte odkaz [usegalaxy.cz/join-training/ai4talents](https://usegalaxy.cz/join-training/ai4talents) – tým sa pridáte do skupiny workshopu.
 
    > ⚠️ Link otvorte až keď ste **prihlásení** – do skupiny sa pridá práve prihlásený účet.
-
----
+   
 
 ## Krok 2: Načítanie dát
 
@@ -28,7 +26,7 @@ Importujte históriu s dátami:
 
 > priamy odkaz: [usegalaxy.cz/u/1b8ea9192727427c9be06de5b9a904cd/h/ai4talents](https://usegalaxy.cz/u/1b8ea9192727427c9be06de5b9a904cd/h/ai4talents)
 
----
+
 
 ## Krok 3: Mapovanie
 
@@ -39,15 +37,15 @@ Importujte históriu s dátami:
 
    **a) Referenčný genóm**
 
-   ![Nastavenie referenčného genómu](pictures/screen1.png)
+   ![Nastavenie referenčného genómu](screen1.png)
 
    **b) Dáta pacienta**
 
-   ![Nastavenie dát pacienta](pictures/screen2.png)
+   ![Nastavenie dát pacienta](screen2.png)
 
    **c) Ďalšie nastavenia**
 
-   ![Ďalšie nastavenia](pictures/screen3.png)
+   ![Ďalšie nastavenia](screen3.png)
 
 3. Kliknite na **Run Tool**.
 
@@ -55,15 +53,19 @@ Importujte históriu s dátami:
 
 Mapovanie chvíľu trvá. Keď sa výsledok v histórii zafarbí na zeleno, je hotové.
 
----
 
 ## Krok 4: Hľadanie mutácie
 
 1. Pri výsledku mapovania v histórii kliknite na ikonu oka (**View**).
-2. V genómovom prehliadači prejdite na chromozóm 11, na pozíciu:
-   ```
-   chr11:5217179-5234011
-   ```
-3. Nájdite pozíciu mutácie.
+2. V genómovom prehliadači nájdite pozíciu mutácie.
 
-💡 **Tip:** skutočná mutácia je v mnohých readoch na tej istej pozícii, nie iba v jednom.
+<details>
+<summary>💡 Nápoveda – kde hľadať?</summary>
+
+Prejdite na chromozóm 11, na pozíciu:
+
+```
+chr11:5217179-5234011
+```
+
+</details>

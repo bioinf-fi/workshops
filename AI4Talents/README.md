@@ -19,3 +19,11 @@ Na workshope si vyskúšate, ako bioinformatici hľadajú mutácie v DNA – v r
 | 6A | [Nájdite mutácie s pomocou AI agenta](aktivita_6A/README.md) | Galaxy + AI agent |
 | 6B | [Alely naprieč kontinentmi](aktivita_6B/README.md) | Galaxy + AI agent, Ensembl |
 | 7 | [Test DNA bez testu DNA – horkosť](aktivita_7/README.md) | ochutnávka |
+
+---
+
+## Kontakt
+
+Študijný odbor **Bioinformatika** na FI MU: [bioinformatika.muni.cz](https://bioinformatika.muni.cz/)
+
+📧 [cechova@fi.muni.cz](mailto:cechova@fi.muni.cz) · [polakova@fi.muni.cz](mailto:polakova@fi.muni.cz)
