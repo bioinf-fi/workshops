@@ -37,15 +37,15 @@ Importujte históriu s dátami:
 
    **a) Referenčný genóm**
 
-   ![Nastavenie referenčného genómu](pictures/screen1.png)
+   <img src="pictures/screen1.png" alt="Nastavenie referenčného genómu" width="500">
 
    **b) Dáta pacienta**
 
-   ![Nastavenie dát pacienta](pictures/screen2.png)
+   <img src="pictures/screen2.png" alt="Nastavenie dát pacienta" width="500">
 
    **c) Ďalšie nastavenia**
 
-   ![Ďalšie nastavenia](pictures/screen3.png)
+   <img src="pictures/screen3.png" alt="Ďalšie nastavenia" width="500">
 
 3. Kliknite na **Run Tool**.
 
