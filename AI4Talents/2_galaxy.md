@@ -69,3 +69,8 @@ chr11:5217179-5234011
 ```
 
 </details>
+
+
+---
+
+[← späť na prehľad aktivít](README.md)

@@ -2,7 +2,7 @@
 
 **Cieľ:** v reálnych dátach pacienta nájdite **aspoň jeden príklad skutočnej mutácie** a **aspoň jeden príklad chyby sekvenovania** – a vysvetlite, ako ste ich od seba rozoznali. Nemusíte nájsť všetko.
 
-**Pravidlá:** tentoraz **bez návodu krok za krokom**. Pracujte s AI agentom **GalaxyAI** a všetko, čo vám povie, **overte v genómovom prehliadači**.
+**Pravidlá:** tentoraz **bez návodu krok za krokom**. Pracujte s **AI v Galaxy** a všetko, čo vám povie, **overte v genómovom prehliadači**.
 
 
 ## Dáta
@@ -28,13 +28,13 @@ V histórii nájdete:
 - `proband.fastq` – ready pacienta
 - `hg19_chr8.fa` – referenčná sekvencia chromozómu 8
 
-> ⚠️ Dáta sú k verzii genómu **hg19** – **nie hg38** ako v Aktivite 2. Povedzte to aj agentovi, inak nebudú sedieť súradnice.
+> ⚠️ Dáta sú k verzii genómu **hg19** – **nie hg38** ako v Aktivite 2. Povedzte to aj AI, inak nebudú sedieť súradnice.
 
-## Ako začať s agentom
+## Ako začať s AI
 
-Otvorte **GalaxyAI** vľavo v menu a vyriešte s jeho pomocou úlohu.
+Vyriešte úlohu s pomocou AI v Galaxy – **GalaxyAI** (interaktívny chat vľavo v menu) alebo **LLM Hub** (nástroj, ktorý pracuje so súbormi z histórie). Ako s nimi pracovať, nájdete v návode **[🤖 Ako pracovať s AI v Galaxy](ai_v_galaxy.md)**.
 
-> ⚠️ **Agent sa môže mýliť.** Ak niečo nefunguje alebo odpoveď nedáva zmysel, overte si to sami.
+> ⚠️ **AI sa môže mýliť.** Ak niečo nefunguje alebo odpoveď nedáva zmysel, overte si to sami.
 
 > ℹ️ **Pripomienka:** okrem ručného prezerania existuje aj program, ktorý porovná namapované ready s referenciou a mutácie vyhľadá za vás (napr. **FreeBayes** alebo **DeepVariant**).
 > Takýto program voláme **variant caller**.
@@ -47,19 +47,19 @@ Odpovedzte na otázky:
 
 1. **Skutočná mutácia:** pozícia + zmena (napr. `chr8:86376123 A → G`) a prečo si myslíte, že je skutočná.
 2. **Chyba sekvenovania:** pozícia + prečo to podľa vás mutácia nie je.
-3. **Kde sa agent mýlil** alebo poradil zle (ak áno).
+3. **Kde sa AI mýlila** alebo poradila zle (ak áno).
 
 
 ## Nápovedy
 
 <details>
-<summary>💡 Neviete, čo sa agenta opýtať?</summary>
+<summary>💡 Neviete, čo sa AI opýtať?</summary>
 
 Napríklad:
 
-- *„Mám single-end ready pacienta a referenčnú sekvenciu chromozómu 8 (hg19). Ako ich namapujem?“*
-- *„Ako si zobrazím namapované ready v genómovom prehliadači?“*
-- *„Podľa čoho rozoznám skutočnú mutáciu od chyby sekvenátora?“*
+- *„Mám single-end ready pacienta a referenčnú sekvenciu chromozómu 8 (hg19). Ako ich namapujem?“* (GalaxyAI)
+- *„Ako si zobrazím namapované ready v genómovom prehliadači?“* (GalaxyAI)
+- *„Podľa čoho rozoznám skutočnú mutáciu od chyby sekvenátora?“* (GalaxyAI alebo LLM Hub)
 
 </details>
 
