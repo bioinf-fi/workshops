@@ -19,6 +19,8 @@ V Galaxy máte k dispozícii dve možnosti, ako pracovať s AI. Používajte ich
 - Dá sa použiť aj vo **workflow** – napríklad mu dáte výstup iného nástroja a on vám ho vysvetlí.
 - Na rozdiel od chatu **škáluje** – zvládne aj veľa súborov.
 
+> ⚠️ LLM Hub **nespúšťa nástroje** – nevie za vás mapovať ani hľadať mutácie, len **číta text a interpretuje ho**. Nedávajte mu **veľké súbory** (ready, referenčný genóm) – nezmestia sa mu. Hodí sa na **malé výsledky**, napr. tabuľku alebo zoznam nájdených variantov.
+
 > ℹ️ **Workflow** = uložený postup v Galaxy – niekoľko nástrojov za sebou (napr. mapovanie → hľadanie mutácií), ktoré potom spustíte **jedným klikom** aj na nové dáta. Ako recept: raz ho zapíšete a potom podľa neho variete znova a znova.
 
 

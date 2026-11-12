@@ -8,6 +8,8 @@ Na workshope si vyskúšate, ako bioinformatici hľadajú mutácie v DNA – v r
 
 [Odkaz na slidy](https://docs.google.com/presentation/d/1JRz-Bt2oi88JR1HwHJhwpS3igM0PccIC/edit?usp=sharing&ouid=105056680398091413632&rtpof=true&sd=true)
 
+> ⚠️ **Skôr než začnete:** prihláste sa do Galaxy a pridajte sa do skupiny workshopu – **[návod tu](0_galaxy_ucet.md)**.
+
 ---
 
 ## Prehľad aktivít

@@ -2,23 +2,13 @@
 
 **Cieľ:** namapovať dáta pacienta na referenčný genóm a v genómovom prehliadači nájsť pozíciu mutácie.
 
-**Postup v skratke:** účet v Galaxy → načítanie dát → mapovanie (Map with BWA-MEM) → zobrazenie v prehliadači → nájdenie mutácie
+**Postup v skratke:** načítanie dát → mapovanie (Map with BWA-MEM) → zobrazenie v prehliadači → nájdenie mutácie
 
 
-## Krok 1: Pridanie sa do Galaxy skupiny
+> ⚠️ Ešte nemáte účet v Galaxy alebo nie ste v skupine workshopu? Najprv postupujte podľa návodu **[Prihlásenie do Galaxy a pridanie sa do skupiny](0_galaxy_ucet.md)**.
 
-1. Otvorte [usegalaxy.cz](https://usegalaxy.cz/).
-2. Prihláste sa:
-   - **Už ste niekedy používali usegalaxy.cz?** Prihláste sa rovnako ako doteraz.
-   - **Ešte nie?** Kliknite na **LS LOGIN** a vytvorte si nový účet (ideálne pomocou školských údajov).
 
-   > ℹ️ Klasická registrácia v tejto Galaxy nie je možná – nový účet si vytvoríte len cez **LS LOGIN**.
-3. Otvorte odkaz [usegalaxy.cz/join-training/ai4talents](https://usegalaxy.cz/join-training/ai4talents) – tým sa pridáte do skupiny workshopu.
-
-   > ⚠️ Link otvorte až keď ste **prihlásení** – do skupiny sa pridá práve prihlásený účet.
-   
-
-## Krok 2: Načítanie dát
+## Krok 1: Načítanie dát
 
 Importujte históriu s dátami:
 
@@ -28,7 +18,7 @@ Importujte históriu s dátami:
 
 
 
-## Krok 3: Mapovanie
+## Krok 2: Mapovanie
 
 1. V zozname nástrojov vyhľadajte `bwa mem` a vyberte **Map with BWA-MEM**.
 
@@ -54,7 +44,7 @@ Importujte históriu s dátami:
 Mapovanie chvíľu trvá. Keď sa výsledok v histórii zafarbí na zeleno, je hotové.
 
 
-## Krok 4: Hľadanie mutácie
+## Krok 3: Hľadanie mutácie
 
 1. Pri výsledku mapovania v histórii kliknite na ikonu oka (**View**).
 2. V genómovom prehliadači nájdite pozíciu mutácie.
