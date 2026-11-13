@@ -6,7 +6,7 @@
 
 Na workshope si vyskúšate, ako bioinformatici hľadajú mutácie v DNA – v reálnych dátach pacienta pomocou webovej platformy Galaxy a nakoniec s pomocou umelej inteligencie (AI agentov a AlphaFoldu).
 
-[Odkaz na slidy](https://docs.google.com/presentation/d/1JRz-Bt2oi88JR1HwHJhwpS3igM0PccIC/edit?usp=sharing&ouid=105056680398091413632&rtpof=true&sd=true)
+[Odkaz na slidy]([https://docs.google.com/presentation/d/1JRz-Bt2oi88JR1HwHJhwpS3igM0PccIC/edit?usp=sharing&ouid=105056680398091413632&rtpof=true&sd=true](https://docs.google.com/presentation/d/1jSg69uEwFVNNo_oiC-pycTMrk6NHhy2YEppuOjjg3VY/edit?usp=sharing))
 
 > ⚠️ **Skôr než začnete:** prihláste sa do Galaxy a pridajte sa do skupiny workshopu – **[návod tu](0_galaxy_ucet.md)**.
 
