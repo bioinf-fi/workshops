@@ -12,7 +12,7 @@
 
 Importujte históriu s dátami:
 
-**Histories** → **Public histories** → **ai4talents_2** → **Import this history**
+**Histories** → **Public histories** → **ai4talents_2** → **View** → **Import this history**
 
 > priamy odkaz: [usegalaxy.cz/u/1b8ea9192727427c9be06de5b9a904cd/h/ai4talents_2](https://usegalaxy.cz/u/1b8ea9192727427c9be06de5b9a904cd/h/ai4talents_2)
 
