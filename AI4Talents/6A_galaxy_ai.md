@@ -22,7 +22,7 @@ Importujte históriu s dátami:
 
 **Histories** → **Public histories** → **ai4talents_6a** → **Import this history**
 
-> priamy odkaz: [usegalaxy.cz/u/1b8ea9192727427c9be06de5b9a904cd/h/ai4talents_6a](https://usegalaxy.cz/u/1b8ea9192727427c9be06de5b9a904cd/h/ai4talents_6a)
+> priamy odkaz: [usegalaxy.cz/u/1b8ea9192727427c9be06de5b9a904cd/h/ai4talents_6a](https://usegalaxy.cz/u/1b8ea9192727427c9be06de5b9a904cd/h/ai4talents-6a)
 
 V histórii nájdete:
 - `proband.fastq` – ready pacienta

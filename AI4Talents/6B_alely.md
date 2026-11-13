@@ -37,7 +37,7 @@ Importujte históriu s dátami:
 
 **Histories** → **Public histories** → **ai4talents-6b** → **Import this history**
 
-> priamy odkaz: [usegalaxy.cz/u/1b8ea9192727427c9be06de5b9a904cd/h/ai4talents-6b](https://usegalaxy.cz/u/1b8ea9192727427c9be06de5b9a904cd/h/ai4talents-6b)
+> priamy odkaz: [usegalaxy.cz/u/1b8ea9192727427c9be06de5b9a904cd/h/ai4talents-6b](https://usegalaxy.cz/u/1b8ea9192727427c9be06de5b9a904cd/h/ai4talents6b)
 
 V histórii nájdete:
 - `6B_genotypy.tsv` – genotypy: vzorka (človek), variant, gén, genotyp (napr. `T|A` – jedna kópia od mamy, jedna od otca), sledovaná alela a koľko jej kópií človek má (0, 1 alebo 2)
