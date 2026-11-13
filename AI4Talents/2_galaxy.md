@@ -46,18 +46,12 @@ Mapovanie chvíľu trvá. Keď sa výsledok v histórii zafarbí na zeleno, je h
 ## Krok 3: Hľadanie mutácie
 
 1. Pri výsledku mapovania v histórii kliknite na ikonu oka (**View**).
-2. V genómovom prehliadači nájdite pozíciu mutácie.
-
-<details>
-<summary>💡 Nápoveda – kde hľadať?</summary>
-
-Prejdite na chromozóm 11, na pozíciu:
+2. V genómovom prehliadači prejdite na chromozóm 11, na pozíciu:
 
 ```
 chr11:5217179-5234011
 ```
 
-</details>
 
 
 ---
